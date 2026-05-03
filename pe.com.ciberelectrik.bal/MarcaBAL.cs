@@ -23,9 +23,34 @@ namespace pe.com.ciberelectrik.bal
             return dal.MostrarMarcaTodo();
         }
 
+        public bool RegistrarMarca(MarcaBO m)
+        {
+            return dal.RegistrarMarca(m);
+        }
+
         public MarcaBO BuscarMarcaXCodigo(MarcaBO m)
         {
             return dal.BuscarMarcaXCodigo(m);
+        }
+
+        public bool ActualizarMarca(MarcaBO m)
+        {
+            return dal.ActualizarMarca(m);
+        }
+
+        public bool EliminarMarca(MarcaBO m)
+        {
+            return dal.EliminarMarca(m);
+        }
+
+        public bool HabilitarMarca(MarcaBO m)
+        {
+            return dal.HabilitarMarca(m);
+        }
+
+        public int MostrarCodigoMarca()
+        {
+            return dal.MostrarCodigoMarca();
         }
     }
 }

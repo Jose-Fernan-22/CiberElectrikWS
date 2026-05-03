@@ -80,7 +80,31 @@ namespace pe.com.ciberelectrik.dal
                 objconexion.CerrarConexion();
             }
         }
-        //creamos una funcion para buscar
+        // Registrar
+        public bool RegistrarMarca(MarcaBO m)
+        {
+            bool res = false;
+            try
+            {
+                cmd = new SqlCommand("SP_RegistrarMarca", objconexion.Conectar());
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@nombre", m.nombre); 
+                cmd.Parameters.AddWithValue("@estado", m.estado); 
+                int filas = cmd.ExecuteNonQuery();
+                if (filas > 0) res = true;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            finally
+            {
+                objconexion.CerrarConexion();
+            }
+            return res;
+        }
+
+        //creamos una funcion para buscar por codigo
         public MarcaBO BuscarMarcaXCodigo(MarcaBO c)
         {
             //creamos una objeto de tipo CategoriaBO
@@ -119,5 +143,104 @@ namespace pe.com.ciberelectrik.dal
                 objconexion.CerrarConexion();
             }
         }
+
+        // Actualizar
+        public bool ActualizarMarca(MarcaBO m)
+        {
+            bool res = false;
+            try
+            {
+                cmd = new SqlCommand("SP_ActualizarMarca", objconexion.Conectar());
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@codigo", m.codigo); 
+                cmd.Parameters.AddWithValue("@nombre", m.nombre); 
+                cmd.Parameters.AddWithValue("@estado", m.estado); 
+                int filas = cmd.ExecuteNonQuery();
+                if (filas > 0) res = true;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            finally
+            {
+                objconexion.CerrarConexion();
+            }
+            return res;
+        }
+
+        // Eliminar (Lógico)
+        public bool EliminarMarca(MarcaBO m)
+        {
+            bool res = false;
+            try
+            {
+                cmd = new SqlCommand("SP_EliminarMarca", objconexion.Conectar()); //[cite: 4]
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@codigo", m.codigo); //[cite: 4]
+                int filas = cmd.ExecuteNonQuery();
+                if (filas > 0) res = true;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            finally
+            {
+                objconexion.CerrarConexion();
+            }
+            return res;
+        }
+
+        // Habilitar (Lógico)
+        public bool HabilitarMarca(MarcaBO m)
+        {
+            bool res = false;
+            try
+            {
+                cmd = new SqlCommand("SP_HabilitarMarca", objconexion.Conectar());
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@codigo", m.codigo); 
+                int filas = cmd.ExecuteNonQuery();
+                if (filas > 0) res = true;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            finally
+            {
+                objconexion.CerrarConexion();
+            }
+            return res;
+        }
+
+        // Obtener el siguiente código (Identity)
+        public int MostrarCodigoMarca()
+        {
+            int codigo = 0;
+            try
+            {
+                cmd = new SqlCommand("SP_CodigoMarca", objconexion.Conectar()); 
+                cmd.CommandType = CommandType.StoredProcedure;
+                dr = cmd.ExecuteReader();
+                if (dr.Read())
+                {
+                    // Capturamos el alias que le pusimos en el procedimiento almacenado
+                    codigo = Convert.ToInt32(dr["SiguienteCodigo"]);
+                }
+                dr.Close();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            finally
+            {
+                objconexion.CerrarConexion();
+            }
+            return codigo;
+        }
+
     }
 }
