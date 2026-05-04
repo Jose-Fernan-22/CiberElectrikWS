@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pe.com.ciberelectrik.bal", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pe.com.ciberelectrik.ui", "pe.com.ciberelectrik.ui\pe.com.ciberelectrik.ui.csproj", "{30EE8919-4672-4B07-965A-7029D5B8E4AA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pe.com.ciberelectrik.ws", "pe.com.ciberelectrik.ws\pe.com.ciberelectrik.ws.csproj", "{1E95EDD6-BD5B-4E49-B6DF-B6B77871A8C8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{30EE8919-4672-4B07-965A-7029D5B8E4AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{30EE8919-4672-4B07-965A-7029D5B8E4AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{30EE8919-4672-4B07-965A-7029D5B8E4AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E95EDD6-BD5B-4E49-B6DF-B6B77871A8C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E95EDD6-BD5B-4E49-B6DF-B6B77871A8C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E95EDD6-BD5B-4E49-B6DF-B6B77871A8C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E95EDD6-BD5B-4E49-B6DF-B6B77871A8C8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
