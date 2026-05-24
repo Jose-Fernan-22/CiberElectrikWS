@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // La información general sobre un ensamblado se controla mediante el siguiente 
 // conjunto de atributos. Cambie los valores de estos atributos para modificar la información
 // asociada a un ensamblado.
-[assembly: AssemblyTitle("pe.com.ciberelectrik.ws")]
+[assembly: AssemblyTitle("pe.com.ciberelectrik.wcf")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("HP")]
-[assembly: AssemblyProduct("pe.com.ciberelectrik.ws")]
+[assembly: AssemblyProduct("pe.com.ciberelectrik.wcf")]
 [assembly: AssemblyCopyright("Copyright © HP 2026")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // El siguiente GUID sirve como ID de typelib si este proyecto se expone a COM
-[assembly: Guid("1e95edd6-bd5b-4e49-b6df-b6b77871a8c8")]
+[assembly: Guid("7c9e7797-fba0-4dbe-8e22-7def3d7e54f5")]
 
 // La información de versión de un ensamblado consta de los siguientes cuatro valores:
 //

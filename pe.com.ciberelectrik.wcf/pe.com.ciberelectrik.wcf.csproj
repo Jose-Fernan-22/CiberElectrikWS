@@ -6,12 +6,12 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{1E95EDD6-BD5B-4E49-B6DF-B6B77871A8C8}</ProjectGuid>
+    <ProjectGuid>{7C9E7797-FBA0-4DBE-8E22-7DEF3D7E54F5}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>pe.com.ciberelectrik.ws</RootNamespace>
-    <AssemblyName>pe.com.ciberelectrik.ws</AssemblyName>
+    <RootNamespace>pe.com.ciberelectrik.wcf</RootNamespace>
+    <AssemblyName>pe.com.ciberelectrik.wcf</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <Use64BitIISExpress />
@@ -20,6 +20,7 @@
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
     <UseGlobalApplicationHostFile />
+    <WcfConfigValidationEnabled>True</WcfConfigValidationEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -41,6 +42,8 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -65,17 +68,17 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
+    <Content Include="WCFCiberElectrik.svc" />
     <Content Include="Web.config" />
-    <Content Include="WSCiberElectrik.asmx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="IWCFCiberElectrik.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="WSCiberElectrik.asmx.cs">
-      <DependentUpon>WSCiberElectrik.asmx</DependentUpon>
-      <SubType>Component</SubType>
+    <Compile Include="WCFCiberElectrik.svc.cs">
+      <DependentUpon>WCFCiberElectrik.svc</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -91,10 +94,6 @@
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\pe.com.ciberelectrik.bal\pe.com.ciberelectrik.bal.csproj">
-      <Project>{43036506-D040-496D-B4E0-A28EBB400C49}</Project>
-      <Name>pe.com.ciberelectrik.bal</Name>
-    </ProjectReference>
     <ProjectReference Include="..\pe.com.ciberelectrik.bo\pe.com.ciberelectrik.bo.csproj">
       <Project>{E2F50179-8D9A-46F5-8247-1580FAE3DA61}</Project>
       <Name>pe.com.ciberelectrik.bo</Name>
@@ -113,9 +112,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>60481</DevelopmentServerPort>
+          <DevelopmentServerPort>55677</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:60481/</IISUrl>
+          <IISUrl>http://localhost:55677/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
