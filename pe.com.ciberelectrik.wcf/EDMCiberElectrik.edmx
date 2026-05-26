@@ -304,6 +304,300 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
+        <Function Name="SP_ActualizarCategoria" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="codigo" Type="int" Mode="In" />
+          <Parameter Name="nombre" Type="varchar" Mode="In" />
+          <Parameter Name="estado" Type="bit" Mode="In" />
+        </Function>
+        <Function Name="SP_ActualizarCliente" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="codigo" Type="int" Mode="In" />
+          <Parameter Name="nomcli" Type="varchar" Mode="In" />
+          <Parameter Name="apepcli" Type="varchar" Mode="In" />
+          <Parameter Name="apemcli" Type="varchar" Mode="In" />
+          <Parameter Name="doccli" Type="varchar" Mode="In" />
+          <Parameter Name="dircli" Type="varchar" Mode="In" />
+          <Parameter Name="telcli" Type="varchar" Mode="In" />
+          <Parameter Name="celcli" Type="varchar" Mode="In" />
+          <Parameter Name="corcli" Type="varchar" Mode="In" />
+          <Parameter Name="estcli" Type="bit" Mode="In" />
+          <Parameter Name="coddis" Type="int" Mode="In" />
+          <Parameter Name="codtipd" Type="int" Mode="In" />
+          <Parameter Name="codsex" Type="int" Mode="In" />
+        </Function>
+        <Function Name="SP_ActualizarDetalleTicketPedido" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="codigo" Type="int" Mode="In" />
+          <Parameter Name="canent" Type="int" Mode="In" />
+          <Parameter Name="preent" Type="money" Mode="In" />
+          <Parameter Name="nroped" Type="int" Mode="In" />
+          <Parameter Name="codpro" Type="int" Mode="In" />
+        </Function>
+        <Function Name="SP_ActualizarDistrito" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="codigo" Type="int" Mode="In" />
+          <Parameter Name="nombre" Type="varchar" Mode="In" />
+          <Parameter Name="estado" Type="bit" Mode="In" />
+        </Function>
+        <Function Name="SP_ActualizarEmpleado" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="codigo" Type="int" Mode="In" />
+          <Parameter Name="nomemp" Type="varchar" Mode="In" />
+          <Parameter Name="apepemp" Type="varchar" Mode="In" />
+          <Parameter Name="apememp" Type="varchar" Mode="In" />
+          <Parameter Name="docemp" Type="varchar" Mode="In" />
+          <Parameter Name="diremp" Type="varchar" Mode="In" />
+          <Parameter Name="telemp" Type="varchar" Mode="In" />
+          <Parameter Name="celemp" Type="varchar" Mode="In" />
+          <Parameter Name="coremp" Type="varchar" Mode="In" />
+          <Parameter Name="usuemp" Type="varchar" Mode="In" />
+          <Parameter Name="claemp" Type="varchar" Mode="In" />
+          <Parameter Name="estemp" Type="bit" Mode="In" />
+          <Parameter Name="coddis" Type="int" Mode="In" />
+          <Parameter Name="codrol" Type="int" Mode="In" />
+          <Parameter Name="codtipd" Type="int" Mode="In" />
+          <Parameter Name="codsex" Type="int" Mode="In" />
+        </Function>
+        <Function Name="SP_ActualizarMarca" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="codigo" Type="int" Mode="In" />
+          <Parameter Name="nombre" Type="varchar" Mode="In" />
+          <Parameter Name="estado" Type="bit" Mode="In" />
+        </Function>
+        <Function Name="SP_ActualizarProducto" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="codigo" Type="int" Mode="In" />
+          <Parameter Name="nombre" Type="varchar" Mode="In" />
+          <Parameter Name="descripcion" Type="varchar" Mode="In" />
+          <Parameter Name="precio" Type="money" Mode="In" />
+          <Parameter Name="cantidad" Type="int" Mode="In" />
+          <Parameter Name="fecha" Type="date" Mode="In" />
+          <Parameter Name="estado" Type="bit" Mode="In" />
+          <Parameter Name="codcat" Type="int" Mode="In" />
+          <Parameter Name="codmar" Type="int" Mode="In" />
+        </Function>
+        <Function Name="SP_ActualizarRol" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="codigo" Type="int" Mode="In" />
+          <Parameter Name="nombre" Type="varchar" Mode="In" />
+          <Parameter Name="estado" Type="bit" Mode="In" />
+        </Function>
+        <Function Name="SP_ActualizarSexo" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="codigo" Type="int" Mode="In" />
+          <Parameter Name="nombre" Type="varchar" Mode="In" />
+          <Parameter Name="estado" Type="bit" Mode="In" />
+        </Function>
+        <Function Name="SP_ActualizarTicketPedido" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="codigo" Type="int" Mode="In" />
+          <Parameter Name="fecped" Type="date" Mode="In" />
+          <Parameter Name="codemp" Type="int" Mode="In" />
+          <Parameter Name="codcli" Type="int" Mode="In" />
+          <Parameter Name="estped" Type="bit" Mode="In" />
+        </Function>
+        <Function Name="SP_ActualizarTipoDocumento" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="codigo" Type="int" Mode="In" />
+          <Parameter Name="nombre" Type="varchar" Mode="In" />
+          <Parameter Name="estado" Type="bit" Mode="In" />
+        </Function>
+        <Function Name="SP_BuscarCategoriaXCodigo" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="codigo" Type="int" Mode="In" />
+        </Function>
+        <Function Name="SP_BuscarClienteXCodigo" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="codigo" Type="int" Mode="In" />
+        </Function>
+        <Function Name="SP_BuscarDetalleTicketPedidoXCodigo" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="codigo" Type="int" Mode="In" />
+        </Function>
+        <Function Name="SP_BuscarDistritoXCodigo" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="codigo" Type="int" Mode="In" />
+        </Function>
+        <Function Name="SP_BuscarEmpleadoXCodigo" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="codigo" Type="int" Mode="In" />
+        </Function>
+        <Function Name="SP_BuscarMarcaXCodigo" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="codigo" Type="int" Mode="In" />
+        </Function>
+        <Function Name="SP_BuscarProductoXCodigo" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="codigo" Type="int" Mode="In" />
+        </Function>
+        <Function Name="SP_BuscarRolXCodigo" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="codigo" Type="int" Mode="In" />
+        </Function>
+        <Function Name="SP_BuscarSexoXCodigo" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="codigo" Type="int" Mode="In" />
+        </Function>
+        <Function Name="SP_BuscarTicketPedidoXCodigo" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="codigo" Type="int" Mode="In" />
+        </Function>
+        <Function Name="SP_BuscarTipoDocumentoXCodigo" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="codigo" Type="int" Mode="In" />
+        </Function>
+        <Function Name="SP_CodigoCategoria" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="SP_CodigoCliente" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="SP_CodigoDetalleTicketPedido" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="SP_CodigoDistrito" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="SP_CodigoEmpleado" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="SP_CodigoMarca" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="SP_CodigoProducto" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="SP_CodigoRol" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="SP_CodigoSexo" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="SP_CodigoTicketPedido" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="SP_CodigoTipoDocumento" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="SP_EliminarCategoria" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="codigo" Type="int" Mode="In" />
+        </Function>
+        <Function Name="SP_EliminarCliente" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="codigo" Type="int" Mode="In" />
+        </Function>
+        <Function Name="SP_EliminarDetalleTicketPedido" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="codigo" Type="int" Mode="In" />
+        </Function>
+        <Function Name="SP_EliminarDistrito" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="codigo" Type="int" Mode="In" />
+        </Function>
+        <Function Name="SP_EliminarEmpleado" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="codigo" Type="int" Mode="In" />
+        </Function>
+        <Function Name="SP_EliminarMarca" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="codigo" Type="int" Mode="In" />
+        </Function>
+        <Function Name="SP_EliminarProducto" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="codigo" Type="int" Mode="In" />
+        </Function>
+        <Function Name="SP_EliminarRol" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="codigo" Type="int" Mode="In" />
+        </Function>
+        <Function Name="SP_EliminarSexo" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="codigo" Type="int" Mode="In" />
+        </Function>
+        <Function Name="SP_EliminarTicketPedido" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="codigo" Type="int" Mode="In" />
+        </Function>
+        <Function Name="SP_EliminarTipoDocumento" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="codigo" Type="int" Mode="In" />
+        </Function>
+        <Function Name="SP_HabilitarCategoria" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="codigo" Type="int" Mode="In" />
+        </Function>
+        <Function Name="SP_HabilitarCliente" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="codigo" Type="int" Mode="In" />
+        </Function>
+        <Function Name="SP_HabilitarDistrito" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="codigo" Type="int" Mode="In" />
+        </Function>
+        <Function Name="SP_HabilitarEmpleado" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="codigo" Type="int" Mode="In" />
+        </Function>
+        <Function Name="SP_HabilitarMarca" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="codigo" Type="int" Mode="In" />
+        </Function>
+        <Function Name="SP_HabilitarProducto" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="codigo" Type="int" Mode="In" />
+        </Function>
+        <Function Name="SP_HabilitarRol" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="codigo" Type="int" Mode="In" />
+        </Function>
+        <Function Name="SP_HabilitarSexo" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="codigo" Type="int" Mode="In" />
+        </Function>
+        <Function Name="SP_HabilitarTicketPedido" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="codigo" Type="int" Mode="In" />
+        </Function>
+        <Function Name="SP_HabilitarTipoDocumento" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="codigo" Type="int" Mode="In" />
+        </Function>
+        <Function Name="SP_MostrarCategoria" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="SP_MostrarCategoriaTodo" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="SP_MostrarCliente" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="SP_MostrarClienteTodo" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="SP_MostrarDetalleTicketPedido" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="SP_MostrarDetalleTicketPedidoTodo" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="SP_MostrarDistrito" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="SP_MostrarDistritoTodo" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="SP_MostrarEmpleado" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="SP_MostrarEmpleadoTodo" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="SP_MostrarMarca" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="SP_MostrarMarcaTodo" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="SP_MostrarProducto" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="SP_MostrarProductoTodo" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="SP_MostrarRol" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="SP_MostrarRolTodo" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="SP_MostrarSexo" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="SP_MostrarSexoTodo" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="SP_MostrarTicketPedido" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="SP_MostrarTicketPedidoTodo" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="SP_MostrarTipoDocumento" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="SP_MostrarTipoDocumentoTodo" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="SP_RegistrarCategoria" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="nombre" Type="varchar" Mode="In" />
+          <Parameter Name="estado" Type="bit" Mode="In" />
+        </Function>
+        <Function Name="SP_RegistrarCliente" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="nomcli" Type="varchar" Mode="In" />
+          <Parameter Name="apepcli" Type="varchar" Mode="In" />
+          <Parameter Name="apemcli" Type="varchar" Mode="In" />
+          <Parameter Name="doccli" Type="varchar" Mode="In" />
+          <Parameter Name="dircli" Type="varchar" Mode="In" />
+          <Parameter Name="telcli" Type="varchar" Mode="In" />
+          <Parameter Name="celcli" Type="varchar" Mode="In" />
+          <Parameter Name="corcli" Type="varchar" Mode="In" />
+          <Parameter Name="estcli" Type="bit" Mode="In" />
+          <Parameter Name="coddis" Type="int" Mode="In" />
+          <Parameter Name="codtipd" Type="int" Mode="In" />
+          <Parameter Name="codsex" Type="int" Mode="In" />
+        </Function>
+        <Function Name="SP_RegistrarDetalleTicketPedido" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="canent" Type="int" Mode="In" />
+          <Parameter Name="preent" Type="money" Mode="In" />
+          <Parameter Name="nroped" Type="int" Mode="In" />
+          <Parameter Name="codpro" Type="int" Mode="In" />
+        </Function>
+        <Function Name="SP_RegistrarDistrito" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="nombre" Type="varchar" Mode="In" />
+          <Parameter Name="estado" Type="bit" Mode="In" />
+        </Function>
+        <Function Name="SP_RegistrarEmpleado" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="nomemp" Type="varchar" Mode="In" />
+          <Parameter Name="apepemp" Type="varchar" Mode="In" />
+          <Parameter Name="apememp" Type="varchar" Mode="In" />
+          <Parameter Name="docemp" Type="varchar" Mode="In" />
+          <Parameter Name="diremp" Type="varchar" Mode="In" />
+          <Parameter Name="telemp" Type="varchar" Mode="In" />
+          <Parameter Name="celemp" Type="varchar" Mode="In" />
+          <Parameter Name="coremp" Type="varchar" Mode="In" />
+          <Parameter Name="usuemp" Type="varchar" Mode="In" />
+          <Parameter Name="claemp" Type="varchar" Mode="In" />
+          <Parameter Name="estemp" Type="bit" Mode="In" />
+          <Parameter Name="coddis" Type="int" Mode="In" />
+          <Parameter Name="codrol" Type="int" Mode="In" />
+          <Parameter Name="codtipd" Type="int" Mode="In" />
+          <Parameter Name="codsex" Type="int" Mode="In" />
+        </Function>
+        <Function Name="SP_RegistrarMarca" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="nombre" Type="varchar" Mode="In" />
+          <Parameter Name="estado" Type="bit" Mode="In" />
+        </Function>
+        <Function Name="SP_RegistrarProducto" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="nombre" Type="varchar" Mode="In" />
+          <Parameter Name="descripcion" Type="varchar" Mode="In" />
+          <Parameter Name="precio" Type="money" Mode="In" />
+          <Parameter Name="cantidad" Type="int" Mode="In" />
+          <Parameter Name="fecha" Type="date" Mode="In" />
+          <Parameter Name="estado" Type="bit" Mode="In" />
+          <Parameter Name="codcat" Type="int" Mode="In" />
+          <Parameter Name="codmar" Type="int" Mode="In" />
+        </Function>
+        <Function Name="SP_RegistrarRol" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="nombre" Type="varchar" Mode="In" />
+          <Parameter Name="estado" Type="bit" Mode="In" />
+        </Function>
+        <Function Name="SP_RegistrarSexo" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="nombre" Type="varchar" Mode="In" />
+          <Parameter Name="estado" Type="bit" Mode="In" />
+        </Function>
+        <Function Name="SP_RegistrarTicketPedido" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="fecped" Type="date" Mode="In" />
+          <Parameter Name="codemp" Type="int" Mode="In" />
+          <Parameter Name="codcli" Type="int" Mode="In" />
+          <Parameter Name="estped" Type="bit" Mode="In" />
+        </Function>
+        <Function Name="SP_RegistrarTipoDocumento" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="nombre" Type="varchar" Mode="In" />
+          <Parameter Name="estado" Type="bit" Mode="In" />
+        </Function>
         <EntityContainer Name="bdciberelectrikapi20261ModelStoreContainer">
           <EntitySet Name="categoria" EntityType="Self.categoria" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="cliente" EntityType="Self.cliente" Schema="dbo" store:Type="Tables" />
@@ -706,7 +1000,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="bdciberelectrikapi20261Entities" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="bdciberelectrikapi20261Entities1" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="categoria" EntityType="Self.categoria" />
           <EntitySet Name="cliente" EntityType="Self.cliente" />
           <EntitySet Name="detalleticketpedido" EntityType="Self.detalleticketpedido" />
@@ -775,13 +1069,617 @@
             <End Role="marca" EntitySet="marca" />
             <End Role="producto" EntitySet="producto" />
           </AssociationSet>
+          <FunctionImport Name="SP_ActualizarCategoria">
+            <Parameter Name="codigo" Mode="In" Type="Int32" />
+            <Parameter Name="nombre" Mode="In" Type="String" />
+            <Parameter Name="estado" Mode="In" Type="Boolean" />
+          </FunctionImport>
+          <FunctionImport Name="SP_ActualizarCliente">
+            <Parameter Name="codigo" Mode="In" Type="Int32" />
+            <Parameter Name="nomcli" Mode="In" Type="String" />
+            <Parameter Name="apepcli" Mode="In" Type="String" />
+            <Parameter Name="apemcli" Mode="In" Type="String" />
+            <Parameter Name="doccli" Mode="In" Type="String" />
+            <Parameter Name="dircli" Mode="In" Type="String" />
+            <Parameter Name="telcli" Mode="In" Type="String" />
+            <Parameter Name="celcli" Mode="In" Type="String" />
+            <Parameter Name="corcli" Mode="In" Type="String" />
+            <Parameter Name="estcli" Mode="In" Type="Boolean" />
+            <Parameter Name="coddis" Mode="In" Type="Int32" />
+            <Parameter Name="codtipd" Mode="In" Type="Int32" />
+            <Parameter Name="codsex" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SP_ActualizarDetalleTicketPedido">
+            <Parameter Name="codigo" Mode="In" Type="Int32" />
+            <Parameter Name="canent" Mode="In" Type="Int32" />
+            <Parameter Name="preent" Mode="In" Type="Decimal" />
+            <Parameter Name="nroped" Mode="In" Type="Int32" />
+            <Parameter Name="codpro" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SP_ActualizarDistrito">
+            <Parameter Name="codigo" Mode="In" Type="Int32" />
+            <Parameter Name="nombre" Mode="In" Type="String" />
+            <Parameter Name="estado" Mode="In" Type="Boolean" />
+          </FunctionImport>
+          <FunctionImport Name="SP_ActualizarEmpleado">
+            <Parameter Name="codigo" Mode="In" Type="Int32" />
+            <Parameter Name="nomemp" Mode="In" Type="String" />
+            <Parameter Name="apepemp" Mode="In" Type="String" />
+            <Parameter Name="apememp" Mode="In" Type="String" />
+            <Parameter Name="docemp" Mode="In" Type="String" />
+            <Parameter Name="diremp" Mode="In" Type="String" />
+            <Parameter Name="telemp" Mode="In" Type="String" />
+            <Parameter Name="celemp" Mode="In" Type="String" />
+            <Parameter Name="coremp" Mode="In" Type="String" />
+            <Parameter Name="usuemp" Mode="In" Type="String" />
+            <Parameter Name="claemp" Mode="In" Type="String" />
+            <Parameter Name="estemp" Mode="In" Type="Boolean" />
+            <Parameter Name="coddis" Mode="In" Type="Int32" />
+            <Parameter Name="codrol" Mode="In" Type="Int32" />
+            <Parameter Name="codtipd" Mode="In" Type="Int32" />
+            <Parameter Name="codsex" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SP_ActualizarMarca">
+            <Parameter Name="codigo" Mode="In" Type="Int32" />
+            <Parameter Name="nombre" Mode="In" Type="String" />
+            <Parameter Name="estado" Mode="In" Type="Boolean" />
+          </FunctionImport>
+          <FunctionImport Name="SP_ActualizarProducto">
+            <Parameter Name="codigo" Mode="In" Type="Int32" />
+            <Parameter Name="nombre" Mode="In" Type="String" />
+            <Parameter Name="descripcion" Mode="In" Type="String" />
+            <Parameter Name="precio" Mode="In" Type="Decimal" />
+            <Parameter Name="cantidad" Mode="In" Type="Int32" />
+            <Parameter Name="fecha" Mode="In" Type="DateTime" />
+            <Parameter Name="estado" Mode="In" Type="Boolean" />
+            <Parameter Name="codcat" Mode="In" Type="Int32" />
+            <Parameter Name="codmar" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SP_ActualizarRol">
+            <Parameter Name="codigo" Mode="In" Type="Int32" />
+            <Parameter Name="nombre" Mode="In" Type="String" />
+            <Parameter Name="estado" Mode="In" Type="Boolean" />
+          </FunctionImport>
+          <FunctionImport Name="SP_ActualizarSexo">
+            <Parameter Name="codigo" Mode="In" Type="Int32" />
+            <Parameter Name="nombre" Mode="In" Type="String" />
+            <Parameter Name="estado" Mode="In" Type="Boolean" />
+          </FunctionImport>
+          <FunctionImport Name="SP_ActualizarTicketPedido">
+            <Parameter Name="codigo" Mode="In" Type="Int32" />
+            <Parameter Name="fecped" Mode="In" Type="DateTime" />
+            <Parameter Name="codemp" Mode="In" Type="Int32" />
+            <Parameter Name="codcli" Mode="In" Type="Int32" />
+            <Parameter Name="estped" Mode="In" Type="Boolean" />
+          </FunctionImport>
+          <FunctionImport Name="SP_ActualizarTipoDocumento">
+            <Parameter Name="codigo" Mode="In" Type="Int32" />
+            <Parameter Name="nombre" Mode="In" Type="String" />
+            <Parameter Name="estado" Mode="In" Type="Boolean" />
+          </FunctionImport>
+          <FunctionImport Name="SP_BuscarCategoriaXCodigo" ReturnType="Collection(bdciberelectrikapi20261Model.SP_BuscarCategoriaXCodigo_Result)">
+            <Parameter Name="codigo" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SP_BuscarClienteXCodigo" ReturnType="Collection(bdciberelectrikapi20261Model.SP_BuscarClienteXCodigo_Result)">
+            <Parameter Name="codigo" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SP_BuscarDetalleTicketPedidoXCodigo" ReturnType="Collection(bdciberelectrikapi20261Model.SP_BuscarDetalleTicketPedidoXCodigo_Result)">
+            <Parameter Name="codigo" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SP_BuscarDistritoXCodigo" ReturnType="Collection(bdciberelectrikapi20261Model.SP_BuscarDistritoXCodigo_Result)">
+            <Parameter Name="codigo" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SP_BuscarEmpleadoXCodigo" ReturnType="Collection(bdciberelectrikapi20261Model.SP_BuscarEmpleadoXCodigo_Result)">
+            <Parameter Name="codigo" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SP_BuscarMarcaXCodigo" ReturnType="Collection(bdciberelectrikapi20261Model.SP_BuscarMarcaXCodigo_Result)">
+            <Parameter Name="codigo" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SP_BuscarProductoXCodigo" ReturnType="Collection(bdciberelectrikapi20261Model.SP_BuscarProductoXCodigo_Result)">
+            <Parameter Name="codigo" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SP_BuscarRolXCodigo" ReturnType="Collection(bdciberelectrikapi20261Model.SP_BuscarRolXCodigo_Result)">
+            <Parameter Name="codigo" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SP_BuscarSexoXCodigo" ReturnType="Collection(bdciberelectrikapi20261Model.SP_BuscarSexoXCodigo_Result)">
+            <Parameter Name="codigo" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SP_BuscarTicketPedidoXCodigo" ReturnType="Collection(bdciberelectrikapi20261Model.SP_BuscarTicketPedidoXCodigo_Result)">
+            <Parameter Name="codigo" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SP_BuscarTipoDocumentoXCodigo" ReturnType="Collection(bdciberelectrikapi20261Model.SP_BuscarTipoDocumentoXCodigo_Result)">
+            <Parameter Name="codigo" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SP_CodigoCategoria" ReturnType="Collection(Int32)" />
+          <FunctionImport Name="SP_CodigoCliente" ReturnType="Collection(Int32)" />
+          <FunctionImport Name="SP_CodigoDetalleTicketPedido" ReturnType="Collection(Int32)" />
+          <FunctionImport Name="SP_CodigoDistrito" ReturnType="Collection(Int32)" />
+          <FunctionImport Name="SP_CodigoEmpleado" ReturnType="Collection(Int32)" />
+          <FunctionImport Name="SP_CodigoMarca" ReturnType="Collection(Int32)" />
+          <FunctionImport Name="SP_CodigoProducto" ReturnType="Collection(Int32)" />
+          <FunctionImport Name="SP_CodigoRol" ReturnType="Collection(Int32)" />
+          <FunctionImport Name="SP_CodigoSexo" ReturnType="Collection(Int32)" />
+          <FunctionImport Name="SP_CodigoTicketPedido" ReturnType="Collection(Int32)" />
+          <FunctionImport Name="SP_CodigoTipoDocumento" ReturnType="Collection(Int32)" />
+          <FunctionImport Name="SP_EliminarCategoria">
+            <Parameter Name="codigo" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SP_EliminarCliente">
+            <Parameter Name="codigo" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SP_EliminarDetalleTicketPedido">
+            <Parameter Name="codigo" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SP_EliminarDistrito">
+            <Parameter Name="codigo" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SP_EliminarEmpleado">
+            <Parameter Name="codigo" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SP_EliminarMarca">
+            <Parameter Name="codigo" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SP_EliminarProducto">
+            <Parameter Name="codigo" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SP_EliminarRol">
+            <Parameter Name="codigo" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SP_EliminarSexo">
+            <Parameter Name="codigo" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SP_EliminarTicketPedido">
+            <Parameter Name="codigo" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SP_EliminarTipoDocumento">
+            <Parameter Name="codigo" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SP_HabilitarCategoria">
+            <Parameter Name="codigo" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SP_HabilitarCliente">
+            <Parameter Name="codigo" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SP_HabilitarDistrito">
+            <Parameter Name="codigo" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SP_HabilitarEmpleado">
+            <Parameter Name="codigo" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SP_HabilitarMarca">
+            <Parameter Name="codigo" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SP_HabilitarProducto">
+            <Parameter Name="codigo" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SP_HabilitarRol">
+            <Parameter Name="codigo" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SP_HabilitarSexo">
+            <Parameter Name="codigo" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SP_HabilitarTicketPedido">
+            <Parameter Name="codigo" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SP_HabilitarTipoDocumento">
+            <Parameter Name="codigo" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SP_MostrarCategoria" ReturnType="Collection(bdciberelectrikapi20261Model.SP_MostrarCategoria_Result)" />
+          <FunctionImport Name="SP_MostrarCategoriaTodo" ReturnType="Collection(bdciberelectrikapi20261Model.SP_MostrarCategoriaTodo_Result)" />
+          <FunctionImport Name="SP_MostrarCliente" ReturnType="Collection(bdciberelectrikapi20261Model.SP_MostrarCliente_Result)" />
+          <FunctionImport Name="SP_MostrarClienteTodo" ReturnType="Collection(bdciberelectrikapi20261Model.SP_MostrarClienteTodo_Result)" />
+          <FunctionImport Name="SP_MostrarDetalleTicketPedido" ReturnType="Collection(bdciberelectrikapi20261Model.SP_MostrarDetalleTicketPedido_Result)" />
+          <FunctionImport Name="SP_MostrarDetalleTicketPedidoTodo" ReturnType="Collection(bdciberelectrikapi20261Model.SP_MostrarDetalleTicketPedidoTodo_Result)" />
+          <FunctionImport Name="SP_MostrarDistrito" ReturnType="Collection(bdciberelectrikapi20261Model.SP_MostrarDistrito_Result)" />
+          <FunctionImport Name="SP_MostrarDistritoTodo" ReturnType="Collection(bdciberelectrikapi20261Model.SP_MostrarDistritoTodo_Result)" />
+          <FunctionImport Name="SP_MostrarEmpleado" ReturnType="Collection(bdciberelectrikapi20261Model.SP_MostrarEmpleado_Result)" />
+          <FunctionImport Name="SP_MostrarEmpleadoTodo" ReturnType="Collection(bdciberelectrikapi20261Model.SP_MostrarEmpleadoTodo_Result)" />
+          <FunctionImport Name="SP_MostrarMarca" ReturnType="Collection(bdciberelectrikapi20261Model.SP_MostrarMarca_Result)" />
+          <FunctionImport Name="SP_MostrarMarcaTodo" ReturnType="Collection(bdciberelectrikapi20261Model.SP_MostrarMarcaTodo_Result)" />
+          <FunctionImport Name="SP_MostrarProducto" ReturnType="Collection(bdciberelectrikapi20261Model.SP_MostrarProducto_Result)" />
+          <FunctionImport Name="SP_MostrarProductoTodo" ReturnType="Collection(bdciberelectrikapi20261Model.SP_MostrarProductoTodo_Result)" />
+          <FunctionImport Name="SP_MostrarRol" ReturnType="Collection(bdciberelectrikapi20261Model.SP_MostrarRol_Result)" />
+          <FunctionImport Name="SP_MostrarRolTodo" ReturnType="Collection(bdciberelectrikapi20261Model.SP_MostrarRolTodo_Result)" />
+          <FunctionImport Name="SP_MostrarSexo" ReturnType="Collection(bdciberelectrikapi20261Model.SP_MostrarSexo_Result)" />
+          <FunctionImport Name="SP_MostrarSexoTodo" ReturnType="Collection(bdciberelectrikapi20261Model.SP_MostrarSexoTodo_Result)" />
+          <FunctionImport Name="SP_MostrarTicketPedido" ReturnType="Collection(bdciberelectrikapi20261Model.SP_MostrarTicketPedido_Result)" />
+          <FunctionImport Name="SP_MostrarTicketPedidoTodo" ReturnType="Collection(bdciberelectrikapi20261Model.SP_MostrarTicketPedidoTodo_Result)" />
+          <FunctionImport Name="SP_MostrarTipoDocumento" ReturnType="Collection(bdciberelectrikapi20261Model.SP_MostrarTipoDocumento_Result)" />
+          <FunctionImport Name="SP_MostrarTipoDocumentoTodo" ReturnType="Collection(bdciberelectrikapi20261Model.SP_MostrarTipoDocumentoTodo_Result)" />
+          <FunctionImport Name="SP_RegistrarCategoria">
+            <Parameter Name="nombre" Mode="In" Type="String" />
+            <Parameter Name="estado" Mode="In" Type="Boolean" />
+          </FunctionImport>
+          <FunctionImport Name="SP_RegistrarCliente">
+            <Parameter Name="nomcli" Mode="In" Type="String" />
+            <Parameter Name="apepcli" Mode="In" Type="String" />
+            <Parameter Name="apemcli" Mode="In" Type="String" />
+            <Parameter Name="doccli" Mode="In" Type="String" />
+            <Parameter Name="dircli" Mode="In" Type="String" />
+            <Parameter Name="telcli" Mode="In" Type="String" />
+            <Parameter Name="celcli" Mode="In" Type="String" />
+            <Parameter Name="corcli" Mode="In" Type="String" />
+            <Parameter Name="estcli" Mode="In" Type="Boolean" />
+            <Parameter Name="coddis" Mode="In" Type="Int32" />
+            <Parameter Name="codtipd" Mode="In" Type="Int32" />
+            <Parameter Name="codsex" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SP_RegistrarDetalleTicketPedido">
+            <Parameter Name="canent" Mode="In" Type="Int32" />
+            <Parameter Name="preent" Mode="In" Type="Decimal" />
+            <Parameter Name="nroped" Mode="In" Type="Int32" />
+            <Parameter Name="codpro" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SP_RegistrarDistrito">
+            <Parameter Name="nombre" Mode="In" Type="String" />
+            <Parameter Name="estado" Mode="In" Type="Boolean" />
+          </FunctionImport>
+          <FunctionImport Name="SP_RegistrarEmpleado">
+            <Parameter Name="nomemp" Mode="In" Type="String" />
+            <Parameter Name="apepemp" Mode="In" Type="String" />
+            <Parameter Name="apememp" Mode="In" Type="String" />
+            <Parameter Name="docemp" Mode="In" Type="String" />
+            <Parameter Name="diremp" Mode="In" Type="String" />
+            <Parameter Name="telemp" Mode="In" Type="String" />
+            <Parameter Name="celemp" Mode="In" Type="String" />
+            <Parameter Name="coremp" Mode="In" Type="String" />
+            <Parameter Name="usuemp" Mode="In" Type="String" />
+            <Parameter Name="claemp" Mode="In" Type="String" />
+            <Parameter Name="estemp" Mode="In" Type="Boolean" />
+            <Parameter Name="coddis" Mode="In" Type="Int32" />
+            <Parameter Name="codrol" Mode="In" Type="Int32" />
+            <Parameter Name="codtipd" Mode="In" Type="Int32" />
+            <Parameter Name="codsex" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SP_RegistrarMarca">
+            <Parameter Name="nombre" Mode="In" Type="String" />
+            <Parameter Name="estado" Mode="In" Type="Boolean" />
+          </FunctionImport>
+          <FunctionImport Name="SP_RegistrarProducto">
+            <Parameter Name="nombre" Mode="In" Type="String" />
+            <Parameter Name="descripcion" Mode="In" Type="String" />
+            <Parameter Name="precio" Mode="In" Type="Decimal" />
+            <Parameter Name="cantidad" Mode="In" Type="Int32" />
+            <Parameter Name="fecha" Mode="In" Type="DateTime" />
+            <Parameter Name="estado" Mode="In" Type="Boolean" />
+            <Parameter Name="codcat" Mode="In" Type="Int32" />
+            <Parameter Name="codmar" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SP_RegistrarRol">
+            <Parameter Name="nombre" Mode="In" Type="String" />
+            <Parameter Name="estado" Mode="In" Type="Boolean" />
+          </FunctionImport>
+          <FunctionImport Name="SP_RegistrarSexo">
+            <Parameter Name="nombre" Mode="In" Type="String" />
+            <Parameter Name="estado" Mode="In" Type="Boolean" />
+          </FunctionImport>
+          <FunctionImport Name="SP_RegistrarTicketPedido">
+            <Parameter Name="fecped" Mode="In" Type="DateTime" />
+            <Parameter Name="codemp" Mode="In" Type="Int32" />
+            <Parameter Name="codcli" Mode="In" Type="Int32" />
+            <Parameter Name="estped" Mode="In" Type="Boolean" />
+          </FunctionImport>
+          <FunctionImport Name="SP_RegistrarTipoDocumento">
+            <Parameter Name="nombre" Mode="In" Type="String" />
+            <Parameter Name="estado" Mode="In" Type="Boolean" />
+          </FunctionImport>
         </EntityContainer>
+        <ComplexType Name="SP_BuscarCategoriaXCodigo_Result">
+          <Property Type="Int32" Name="codcat" Nullable="false" />
+          <Property Type="String" Name="nomcat" Nullable="false" MaxLength="30" />
+          <Property Type="Boolean" Name="estcat" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="SP_BuscarClienteXCodigo_Result">
+          <Property Type="Int32" Name="codcli" Nullable="false" />
+          <Property Type="String" Name="nomcli" Nullable="false" MaxLength="60" />
+          <Property Type="String" Name="apepcli" Nullable="false" MaxLength="60" />
+          <Property Type="String" Name="apemcli" Nullable="false" MaxLength="60" />
+          <Property Type="String" Name="doccli" Nullable="false" MaxLength="20" />
+          <Property Type="String" Name="dircli" Nullable="false" MaxLength="100" />
+          <Property Type="String" Name="telcli" Nullable="false" MaxLength="7" />
+          <Property Type="String" Name="celcli" Nullable="false" MaxLength="9" />
+          <Property Type="String" Name="corcli" Nullable="false" MaxLength="60" />
+          <Property Type="Boolean" Name="estcli" Nullable="false" />
+          <Property Type="Int32" Name="coddis" Nullable="false" />
+          <Property Type="String" Name="nomdis" Nullable="false" MaxLength="40" />
+          <Property Type="Int32" Name="codtipd" Nullable="false" />
+          <Property Type="String" Name="nomtipd" Nullable="false" MaxLength="40" />
+          <Property Type="Int32" Name="codsex" Nullable="false" />
+          <Property Type="String" Name="nomsex" Nullable="false" MaxLength="40" />
+        </ComplexType>
+        <ComplexType Name="SP_BuscarDetalleTicketPedidoXCodigo_Result">
+          <Property Type="Int32" Name="nrodet" Nullable="false" />
+          <Property Type="Int32" Name="canent" Nullable="false" />
+          <Property Type="Decimal" Name="preent" Nullable="false" Precision="19" />
+          <Property Type="Int32" Name="nroped" Nullable="false" />
+          <Property Type="DateTime" Name="fecped" Nullable="false" />
+          <Property Type="Boolean" Name="estped" Nullable="false" />
+          <Property Type="Int32" Name="codpro" Nullable="false" />
+          <Property Type="String" Name="nompro" Nullable="false" MaxLength="80" />
+        </ComplexType>
+        <ComplexType Name="SP_BuscarDistritoXCodigo_Result">
+          <Property Type="Int32" Name="coddis" Nullable="false" />
+          <Property Type="String" Name="nomdis" Nullable="false" MaxLength="40" />
+          <Property Type="Boolean" Name="estdis" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="SP_BuscarEmpleadoXCodigo_Result">
+          <Property Type="Int32" Name="codemp" Nullable="false" />
+          <Property Type="String" Name="nomemp" Nullable="false" MaxLength="60" />
+          <Property Type="String" Name="apepemp" Nullable="false" MaxLength="60" />
+          <Property Type="String" Name="apememp" Nullable="false" MaxLength="60" />
+          <Property Type="String" Name="docemp" Nullable="false" MaxLength="20" />
+          <Property Type="String" Name="diremp" Nullable="false" MaxLength="100" />
+          <Property Type="String" Name="telemp" Nullable="false" MaxLength="15" />
+          <Property Type="String" Name="celemp" Nullable="false" MaxLength="20" />
+          <Property Type="String" Name="coremp" Nullable="false" MaxLength="60" />
+          <Property Type="String" Name="usuemp" Nullable="false" MaxLength="40" />
+          <Property Type="String" Name="claemp" Nullable="false" MaxLength="60" />
+          <Property Type="Boolean" Name="estemp" Nullable="false" />
+          <Property Type="Int32" Name="coddis" Nullable="false" />
+          <Property Type="String" Name="nomdis" Nullable="false" MaxLength="40" />
+          <Property Type="Int32" Name="codrol" Nullable="false" />
+          <Property Type="String" Name="nomrol" Nullable="false" MaxLength="40" />
+          <Property Type="Int32" Name="codtipd" Nullable="false" />
+          <Property Type="String" Name="nomtipd" Nullable="false" MaxLength="40" />
+          <Property Type="Int32" Name="codsex" Nullable="false" />
+          <Property Type="String" Name="nomsex" Nullable="false" MaxLength="40" />
+        </ComplexType>
+        <ComplexType Name="SP_BuscarMarcaXCodigo_Result">
+          <Property Type="Int32" Name="codmar" Nullable="false" />
+          <Property Type="String" Name="nommar" Nullable="false" MaxLength="40" />
+          <Property Type="Boolean" Name="estmar" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="SP_BuscarProductoXCodigo_Result">
+          <Property Type="Int32" Name="codpro" Nullable="false" />
+          <Property Type="String" Name="nompro" Nullable="false" MaxLength="80" />
+          <Property Type="String" Name="despro" Nullable="false" MaxLength="300" />
+          <Property Type="Decimal" Name="prepro" Nullable="false" Precision="19" />
+          <Property Type="Int32" Name="canpro" Nullable="false" />
+          <Property Type="DateTime" Name="fecing" Nullable="false" />
+          <Property Type="Boolean" Name="estpro" Nullable="false" />
+          <Property Type="Int32" Name="codcat" Nullable="false" />
+          <Property Type="String" Name="nomcat" Nullable="false" MaxLength="30" />
+          <Property Type="Int32" Name="codmar" Nullable="false" />
+          <Property Type="String" Name="nommar" Nullable="false" MaxLength="40" />
+        </ComplexType>
+        <ComplexType Name="SP_BuscarRolXCodigo_Result">
+          <Property Type="Int32" Name="codrol" Nullable="false" />
+          <Property Type="String" Name="nomrol" Nullable="false" MaxLength="40" />
+          <Property Type="Boolean" Name="estrol" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="SP_BuscarSexoXCodigo_Result">
+          <Property Type="Int32" Name="codsex" Nullable="false" />
+          <Property Type="String" Name="nomsex" Nullable="false" MaxLength="40" />
+          <Property Type="Boolean" Name="estsex" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="SP_BuscarTicketPedidoXCodigo_Result">
+          <Property Type="Int32" Name="nroped" Nullable="false" />
+          <Property Type="DateTime" Name="fecped" Nullable="false" />
+          <Property Type="Boolean" Name="estped" Nullable="false" />
+          <Property Type="Int32" Name="codemp" Nullable="false" />
+          <Property Type="String" Name="nomemp" Nullable="false" MaxLength="60" />
+          <Property Type="String" Name="apepemp" Nullable="false" MaxLength="60" />
+          <Property Type="Int32" Name="codcli" Nullable="false" />
+          <Property Type="String" Name="nomcli" Nullable="false" MaxLength="60" />
+          <Property Type="String" Name="apepcli" Nullable="false" MaxLength="60" />
+        </ComplexType>
+        <ComplexType Name="SP_BuscarTipoDocumentoXCodigo_Result">
+          <Property Type="Int32" Name="codtipd" Nullable="false" />
+          <Property Type="String" Name="nomtipd" Nullable="false" MaxLength="40" />
+          <Property Type="Boolean" Name="esttipd" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="SP_MostrarCategoria_Result">
+          <Property Type="Int32" Name="codcat" Nullable="false" />
+          <Property Type="String" Name="nomcat" Nullable="false" MaxLength="30" />
+          <Property Type="Boolean" Name="estcat" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="SP_MostrarCategoriaTodo_Result">
+          <Property Type="Int32" Name="codcat" Nullable="false" />
+          <Property Type="String" Name="nomcat" Nullable="false" MaxLength="30" />
+          <Property Type="Boolean" Name="estcat" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="SP_MostrarCliente_Result">
+          <Property Type="Int32" Name="codcli" Nullable="false" />
+          <Property Type="String" Name="nomcli" Nullable="false" MaxLength="60" />
+          <Property Type="String" Name="apepcli" Nullable="false" MaxLength="60" />
+          <Property Type="String" Name="apemcli" Nullable="false" MaxLength="60" />
+          <Property Type="String" Name="doccli" Nullable="false" MaxLength="20" />
+          <Property Type="String" Name="dircli" Nullable="false" MaxLength="100" />
+          <Property Type="String" Name="telcli" Nullable="false" MaxLength="7" />
+          <Property Type="String" Name="celcli" Nullable="false" MaxLength="9" />
+          <Property Type="String" Name="corcli" Nullable="false" MaxLength="60" />
+          <Property Type="Boolean" Name="estcli" Nullable="false" />
+          <Property Type="Int32" Name="coddis" Nullable="false" />
+          <Property Type="String" Name="nomdis" Nullable="false" MaxLength="40" />
+          <Property Type="Int32" Name="codtipd" Nullable="false" />
+          <Property Type="String" Name="nomtipd" Nullable="false" MaxLength="40" />
+          <Property Type="Int32" Name="codsex" Nullable="false" />
+          <Property Type="String" Name="nomsex" Nullable="false" MaxLength="40" />
+        </ComplexType>
+        <ComplexType Name="SP_MostrarClienteTodo_Result">
+          <Property Type="Int32" Name="codcli" Nullable="false" />
+          <Property Type="String" Name="nomcli" Nullable="false" MaxLength="60" />
+          <Property Type="String" Name="apepcli" Nullable="false" MaxLength="60" />
+          <Property Type="String" Name="apemcli" Nullable="false" MaxLength="60" />
+          <Property Type="String" Name="doccli" Nullable="false" MaxLength="20" />
+          <Property Type="String" Name="dircli" Nullable="false" MaxLength="100" />
+          <Property Type="String" Name="telcli" Nullable="false" MaxLength="7" />
+          <Property Type="String" Name="celcli" Nullable="false" MaxLength="9" />
+          <Property Type="String" Name="corcli" Nullable="false" MaxLength="60" />
+          <Property Type="Boolean" Name="estcli" Nullable="false" />
+          <Property Type="Int32" Name="coddis" Nullable="false" />
+          <Property Type="String" Name="nomdis" Nullable="false" MaxLength="40" />
+          <Property Type="Int32" Name="codtipd" Nullable="false" />
+          <Property Type="String" Name="nomtipd" Nullable="false" MaxLength="40" />
+          <Property Type="Int32" Name="codsex" Nullable="false" />
+          <Property Type="String" Name="nomsex" Nullable="false" MaxLength="40" />
+        </ComplexType>
+        <ComplexType Name="SP_MostrarDetalleTicketPedido_Result">
+          <Property Type="Int32" Name="nrodet" Nullable="false" />
+          <Property Type="Int32" Name="canent" Nullable="false" />
+          <Property Type="Decimal" Name="preent" Nullable="false" Precision="19" />
+          <Property Type="Int32" Name="nroped" Nullable="false" />
+          <Property Type="DateTime" Name="fecped" Nullable="false" />
+          <Property Type="Boolean" Name="estped" Nullable="false" />
+          <Property Type="Int32" Name="codpro" Nullable="false" />
+          <Property Type="String" Name="nompro" Nullable="false" MaxLength="80" />
+        </ComplexType>
+        <ComplexType Name="SP_MostrarDetalleTicketPedidoTodo_Result">
+          <Property Type="Int32" Name="nrodet" Nullable="false" />
+          <Property Type="Int32" Name="canent" Nullable="false" />
+          <Property Type="Decimal" Name="preent" Nullable="false" Precision="19" />
+          <Property Type="Int32" Name="nroped" Nullable="false" />
+          <Property Type="DateTime" Name="fecped" Nullable="false" />
+          <Property Type="Boolean" Name="estped" Nullable="false" />
+          <Property Type="Int32" Name="codpro" Nullable="false" />
+          <Property Type="String" Name="nompro" Nullable="false" MaxLength="80" />
+        </ComplexType>
+        <ComplexType Name="SP_MostrarDistrito_Result">
+          <Property Type="Int32" Name="coddis" Nullable="false" />
+          <Property Type="String" Name="nomdis" Nullable="false" MaxLength="40" />
+          <Property Type="Boolean" Name="estdis" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="SP_MostrarDistritoTodo_Result">
+          <Property Type="Int32" Name="coddis" Nullable="false" />
+          <Property Type="String" Name="nomdis" Nullable="false" MaxLength="40" />
+          <Property Type="Boolean" Name="estdis" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="SP_MostrarEmpleado_Result">
+          <Property Type="Int32" Name="codemp" Nullable="false" />
+          <Property Type="String" Name="nomemp" Nullable="false" MaxLength="60" />
+          <Property Type="String" Name="apepemp" Nullable="false" MaxLength="60" />
+          <Property Type="String" Name="apememp" Nullable="false" MaxLength="60" />
+          <Property Type="String" Name="docemp" Nullable="false" MaxLength="20" />
+          <Property Type="String" Name="diremp" Nullable="false" MaxLength="100" />
+          <Property Type="String" Name="telemp" Nullable="false" MaxLength="15" />
+          <Property Type="String" Name="celemp" Nullable="false" MaxLength="20" />
+          <Property Type="String" Name="coremp" Nullable="false" MaxLength="60" />
+          <Property Type="String" Name="usuemp" Nullable="false" MaxLength="40" />
+          <Property Type="Boolean" Name="estemp" Nullable="false" />
+          <Property Type="Int32" Name="coddis" Nullable="false" />
+          <Property Type="String" Name="nomdis" Nullable="false" MaxLength="40" />
+          <Property Type="Int32" Name="codrol" Nullable="false" />
+          <Property Type="String" Name="nomrol" Nullable="false" MaxLength="40" />
+          <Property Type="Int32" Name="codtipd" Nullable="false" />
+          <Property Type="String" Name="nomtipd" Nullable="false" MaxLength="40" />
+          <Property Type="Int32" Name="codsex" Nullable="false" />
+          <Property Type="String" Name="nomsex" Nullable="false" MaxLength="40" />
+        </ComplexType>
+        <ComplexType Name="SP_MostrarEmpleadoTodo_Result">
+          <Property Type="Int32" Name="codemp" Nullable="false" />
+          <Property Type="String" Name="nomemp" Nullable="false" MaxLength="60" />
+          <Property Type="String" Name="apepemp" Nullable="false" MaxLength="60" />
+          <Property Type="String" Name="apememp" Nullable="false" MaxLength="60" />
+          <Property Type="String" Name="docemp" Nullable="false" MaxLength="20" />
+          <Property Type="String" Name="diremp" Nullable="false" MaxLength="100" />
+          <Property Type="String" Name="telemp" Nullable="false" MaxLength="15" />
+          <Property Type="String" Name="celemp" Nullable="false" MaxLength="20" />
+          <Property Type="String" Name="coremp" Nullable="false" MaxLength="60" />
+          <Property Type="String" Name="usuemp" Nullable="false" MaxLength="40" />
+          <Property Type="Boolean" Name="estemp" Nullable="false" />
+          <Property Type="Int32" Name="coddis" Nullable="false" />
+          <Property Type="String" Name="nomdis" Nullable="false" MaxLength="40" />
+          <Property Type="Int32" Name="codrol" Nullable="false" />
+          <Property Type="String" Name="nomrol" Nullable="false" MaxLength="40" />
+          <Property Type="Int32" Name="codtipd" Nullable="false" />
+          <Property Type="String" Name="nomtipd" Nullable="false" MaxLength="40" />
+          <Property Type="Int32" Name="codsex" Nullable="false" />
+          <Property Type="String" Name="nomsex" Nullable="false" MaxLength="40" />
+        </ComplexType>
+        <ComplexType Name="SP_MostrarMarca_Result">
+          <Property Type="Int32" Name="codmar" Nullable="false" />
+          <Property Type="String" Name="nommar" Nullable="false" MaxLength="40" />
+          <Property Type="Boolean" Name="estmar" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="SP_MostrarMarcaTodo_Result">
+          <Property Type="Int32" Name="codmar" Nullable="false" />
+          <Property Type="String" Name="nommar" Nullable="false" MaxLength="40" />
+          <Property Type="Boolean" Name="estmar" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="SP_MostrarProducto_Result">
+          <Property Type="Int32" Name="codpro" Nullable="false" />
+          <Property Type="String" Name="nompro" Nullable="false" MaxLength="80" />
+          <Property Type="String" Name="despro" Nullable="false" MaxLength="300" />
+          <Property Type="Decimal" Name="prepro" Nullable="false" Precision="19" />
+          <Property Type="Int32" Name="canpro" Nullable="false" />
+          <Property Type="DateTime" Name="fecing" Nullable="false" />
+          <Property Type="Boolean" Name="estpro" Nullable="false" />
+          <Property Type="Int32" Name="codcat" Nullable="false" />
+          <Property Type="String" Name="nomcat" Nullable="false" MaxLength="30" />
+          <Property Type="Int32" Name="codmar" Nullable="false" />
+          <Property Type="String" Name="nommar" Nullable="false" MaxLength="40" />
+        </ComplexType>
+        <ComplexType Name="SP_MostrarProductoTodo_Result">
+          <Property Type="Int32" Name="codpro" Nullable="false" />
+          <Property Type="String" Name="nompro" Nullable="false" MaxLength="80" />
+          <Property Type="String" Name="despro" Nullable="false" MaxLength="300" />
+          <Property Type="Decimal" Name="prepro" Nullable="false" Precision="19" />
+          <Property Type="Int32" Name="canpro" Nullable="false" />
+          <Property Type="DateTime" Name="fecing" Nullable="false" />
+          <Property Type="Boolean" Name="estpro" Nullable="false" />
+          <Property Type="Int32" Name="codcat" Nullable="false" />
+          <Property Type="String" Name="nomcat" Nullable="false" MaxLength="30" />
+          <Property Type="Int32" Name="codmar" Nullable="false" />
+          <Property Type="String" Name="nommar" Nullable="false" MaxLength="40" />
+        </ComplexType>
+        <ComplexType Name="SP_MostrarRol_Result">
+          <Property Type="Int32" Name="codrol" Nullable="false" />
+          <Property Type="String" Name="nomrol" Nullable="false" MaxLength="40" />
+          <Property Type="Boolean" Name="estrol" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="SP_MostrarRolTodo_Result">
+          <Property Type="Int32" Name="codrol" Nullable="false" />
+          <Property Type="String" Name="nomrol" Nullable="false" MaxLength="40" />
+          <Property Type="Boolean" Name="estrol" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="SP_MostrarSexo_Result">
+          <Property Type="Int32" Name="codsex" Nullable="false" />
+          <Property Type="String" Name="nomsex" Nullable="false" MaxLength="40" />
+          <Property Type="Boolean" Name="estsex" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="SP_MostrarSexoTodo_Result">
+          <Property Type="Int32" Name="codsex" Nullable="false" />
+          <Property Type="String" Name="nomsex" Nullable="false" MaxLength="40" />
+          <Property Type="Boolean" Name="estsex" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="SP_MostrarTicketPedido_Result">
+          <Property Type="Int32" Name="nroped" Nullable="false" />
+          <Property Type="DateTime" Name="fecped" Nullable="false" />
+          <Property Type="Boolean" Name="estped" Nullable="false" />
+          <Property Type="Int32" Name="codemp" Nullable="false" />
+          <Property Type="String" Name="nomemp" Nullable="false" MaxLength="60" />
+          <Property Type="String" Name="apepemp" Nullable="false" MaxLength="60" />
+          <Property Type="Int32" Name="codcli" Nullable="false" />
+          <Property Type="String" Name="nomcli" Nullable="false" MaxLength="60" />
+          <Property Type="String" Name="apepcli" Nullable="false" MaxLength="60" />
+        </ComplexType>
+        <ComplexType Name="SP_MostrarTicketPedidoTodo_Result">
+          <Property Type="Int32" Name="nroped" Nullable="false" />
+          <Property Type="DateTime" Name="fecped" Nullable="false" />
+          <Property Type="Boolean" Name="estped" Nullable="false" />
+          <Property Type="Int32" Name="codemp" Nullable="false" />
+          <Property Type="String" Name="nomemp" Nullable="false" MaxLength="60" />
+          <Property Type="String" Name="apepemp" Nullable="false" MaxLength="60" />
+          <Property Type="Int32" Name="codcli" Nullable="false" />
+          <Property Type="String" Name="nomcli" Nullable="false" MaxLength="60" />
+          <Property Type="String" Name="apepcli" Nullable="false" MaxLength="60" />
+        </ComplexType>
+        <ComplexType Name="SP_MostrarTipoDocumento_Result">
+          <Property Type="Int32" Name="codtipd" Nullable="false" />
+          <Property Type="String" Name="nomtipd" Nullable="false" MaxLength="40" />
+          <Property Type="Boolean" Name="esttipd" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="SP_MostrarTipoDocumentoTodo_Result">
+          <Property Type="Int32" Name="codtipd" Nullable="false" />
+          <Property Type="String" Name="nomtipd" Nullable="false" MaxLength="40" />
+          <Property Type="Boolean" Name="esttipd" Nullable="false" />
+        </ComplexType>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="bdciberelectrikapi20261ModelStoreContainer" CdmEntityContainer="bdciberelectrikapi20261Entities">
+        <EntityContainerMapping StorageEntityContainer="bdciberelectrikapi20261ModelStoreContainer" CdmEntityContainer="bdciberelectrikapi20261Entities1">
           <EntitySetMapping Name="categoria">
             <EntityTypeMapping TypeName="bdciberelectrikapi20261Model.categoria">
               <MappingFragment StoreEntitySet="categoria">
@@ -925,6 +1823,502 @@
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="SP_ActualizarCategoria" FunctionName="bdciberelectrikapi20261Model.Store.SP_ActualizarCategoria" />
+          <FunctionImportMapping FunctionImportName="SP_ActualizarCliente" FunctionName="bdciberelectrikapi20261Model.Store.SP_ActualizarCliente" />
+          <FunctionImportMapping FunctionImportName="SP_ActualizarDetalleTicketPedido" FunctionName="bdciberelectrikapi20261Model.Store.SP_ActualizarDetalleTicketPedido" />
+          <FunctionImportMapping FunctionImportName="SP_ActualizarDistrito" FunctionName="bdciberelectrikapi20261Model.Store.SP_ActualizarDistrito" />
+          <FunctionImportMapping FunctionImportName="SP_ActualizarEmpleado" FunctionName="bdciberelectrikapi20261Model.Store.SP_ActualizarEmpleado" />
+          <FunctionImportMapping FunctionImportName="SP_ActualizarMarca" FunctionName="bdciberelectrikapi20261Model.Store.SP_ActualizarMarca" />
+          <FunctionImportMapping FunctionImportName="SP_ActualizarProducto" FunctionName="bdciberelectrikapi20261Model.Store.SP_ActualizarProducto" />
+          <FunctionImportMapping FunctionImportName="SP_ActualizarRol" FunctionName="bdciberelectrikapi20261Model.Store.SP_ActualizarRol" />
+          <FunctionImportMapping FunctionImportName="SP_ActualizarSexo" FunctionName="bdciberelectrikapi20261Model.Store.SP_ActualizarSexo" />
+          <FunctionImportMapping FunctionImportName="SP_ActualizarTicketPedido" FunctionName="bdciberelectrikapi20261Model.Store.SP_ActualizarTicketPedido" />
+          <FunctionImportMapping FunctionImportName="SP_ActualizarTipoDocumento" FunctionName="bdciberelectrikapi20261Model.Store.SP_ActualizarTipoDocumento" />
+          <FunctionImportMapping FunctionImportName="SP_BuscarCategoriaXCodigo" FunctionName="bdciberelectrikapi20261Model.Store.SP_BuscarCategoriaXCodigo">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="bdciberelectrikapi20261Model.SP_BuscarCategoriaXCodigo_Result">
+                <ScalarProperty Name="codcat" ColumnName="codcat" />
+                <ScalarProperty Name="nomcat" ColumnName="nomcat" />
+                <ScalarProperty Name="estcat" ColumnName="estcat" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_BuscarClienteXCodigo" FunctionName="bdciberelectrikapi20261Model.Store.SP_BuscarClienteXCodigo">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="bdciberelectrikapi20261Model.SP_BuscarClienteXCodigo_Result">
+                <ScalarProperty Name="codcli" ColumnName="codcli" />
+                <ScalarProperty Name="nomcli" ColumnName="nomcli" />
+                <ScalarProperty Name="apepcli" ColumnName="apepcli" />
+                <ScalarProperty Name="apemcli" ColumnName="apemcli" />
+                <ScalarProperty Name="doccli" ColumnName="doccli" />
+                <ScalarProperty Name="dircli" ColumnName="dircli" />
+                <ScalarProperty Name="telcli" ColumnName="telcli" />
+                <ScalarProperty Name="celcli" ColumnName="celcli" />
+                <ScalarProperty Name="corcli" ColumnName="corcli" />
+                <ScalarProperty Name="estcli" ColumnName="estcli" />
+                <ScalarProperty Name="coddis" ColumnName="coddis" />
+                <ScalarProperty Name="nomdis" ColumnName="nomdis" />
+                <ScalarProperty Name="codtipd" ColumnName="codtipd" />
+                <ScalarProperty Name="nomtipd" ColumnName="nomtipd" />
+                <ScalarProperty Name="codsex" ColumnName="codsex" />
+                <ScalarProperty Name="nomsex" ColumnName="nomsex" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_BuscarDetalleTicketPedidoXCodigo" FunctionName="bdciberelectrikapi20261Model.Store.SP_BuscarDetalleTicketPedidoXCodigo">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="bdciberelectrikapi20261Model.SP_BuscarDetalleTicketPedidoXCodigo_Result">
+                <ScalarProperty Name="nrodet" ColumnName="nrodet" />
+                <ScalarProperty Name="canent" ColumnName="canent" />
+                <ScalarProperty Name="preent" ColumnName="preent" />
+                <ScalarProperty Name="nroped" ColumnName="nroped" />
+                <ScalarProperty Name="fecped" ColumnName="fecped" />
+                <ScalarProperty Name="estped" ColumnName="estped" />
+                <ScalarProperty Name="codpro" ColumnName="codpro" />
+                <ScalarProperty Name="nompro" ColumnName="nompro" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_BuscarDistritoXCodigo" FunctionName="bdciberelectrikapi20261Model.Store.SP_BuscarDistritoXCodigo">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="bdciberelectrikapi20261Model.SP_BuscarDistritoXCodigo_Result">
+                <ScalarProperty Name="coddis" ColumnName="coddis" />
+                <ScalarProperty Name="nomdis" ColumnName="nomdis" />
+                <ScalarProperty Name="estdis" ColumnName="estdis" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_BuscarEmpleadoXCodigo" FunctionName="bdciberelectrikapi20261Model.Store.SP_BuscarEmpleadoXCodigo">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="bdciberelectrikapi20261Model.SP_BuscarEmpleadoXCodigo_Result">
+                <ScalarProperty Name="codemp" ColumnName="codemp" />
+                <ScalarProperty Name="nomemp" ColumnName="nomemp" />
+                <ScalarProperty Name="apepemp" ColumnName="apepemp" />
+                <ScalarProperty Name="apememp" ColumnName="apememp" />
+                <ScalarProperty Name="docemp" ColumnName="docemp" />
+                <ScalarProperty Name="diremp" ColumnName="diremp" />
+                <ScalarProperty Name="telemp" ColumnName="telemp" />
+                <ScalarProperty Name="celemp" ColumnName="celemp" />
+                <ScalarProperty Name="coremp" ColumnName="coremp" />
+                <ScalarProperty Name="usuemp" ColumnName="usuemp" />
+                <ScalarProperty Name="claemp" ColumnName="claemp" />
+                <ScalarProperty Name="estemp" ColumnName="estemp" />
+                <ScalarProperty Name="coddis" ColumnName="coddis" />
+                <ScalarProperty Name="nomdis" ColumnName="nomdis" />
+                <ScalarProperty Name="codrol" ColumnName="codrol" />
+                <ScalarProperty Name="nomrol" ColumnName="nomrol" />
+                <ScalarProperty Name="codtipd" ColumnName="codtipd" />
+                <ScalarProperty Name="nomtipd" ColumnName="nomtipd" />
+                <ScalarProperty Name="codsex" ColumnName="codsex" />
+                <ScalarProperty Name="nomsex" ColumnName="nomsex" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_BuscarMarcaXCodigo" FunctionName="bdciberelectrikapi20261Model.Store.SP_BuscarMarcaXCodigo">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="bdciberelectrikapi20261Model.SP_BuscarMarcaXCodigo_Result">
+                <ScalarProperty Name="codmar" ColumnName="codmar" />
+                <ScalarProperty Name="nommar" ColumnName="nommar" />
+                <ScalarProperty Name="estmar" ColumnName="estmar" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_BuscarProductoXCodigo" FunctionName="bdciberelectrikapi20261Model.Store.SP_BuscarProductoXCodigo">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="bdciberelectrikapi20261Model.SP_BuscarProductoXCodigo_Result">
+                <ScalarProperty Name="codpro" ColumnName="codpro" />
+                <ScalarProperty Name="nompro" ColumnName="nompro" />
+                <ScalarProperty Name="despro" ColumnName="despro" />
+                <ScalarProperty Name="prepro" ColumnName="prepro" />
+                <ScalarProperty Name="canpro" ColumnName="canpro" />
+                <ScalarProperty Name="fecing" ColumnName="fecing" />
+                <ScalarProperty Name="estpro" ColumnName="estpro" />
+                <ScalarProperty Name="codcat" ColumnName="codcat" />
+                <ScalarProperty Name="nomcat" ColumnName="nomcat" />
+                <ScalarProperty Name="codmar" ColumnName="codmar" />
+                <ScalarProperty Name="nommar" ColumnName="nommar" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_BuscarRolXCodigo" FunctionName="bdciberelectrikapi20261Model.Store.SP_BuscarRolXCodigo">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="bdciberelectrikapi20261Model.SP_BuscarRolXCodigo_Result">
+                <ScalarProperty Name="codrol" ColumnName="codrol" />
+                <ScalarProperty Name="nomrol" ColumnName="nomrol" />
+                <ScalarProperty Name="estrol" ColumnName="estrol" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_BuscarSexoXCodigo" FunctionName="bdciberelectrikapi20261Model.Store.SP_BuscarSexoXCodigo">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="bdciberelectrikapi20261Model.SP_BuscarSexoXCodigo_Result">
+                <ScalarProperty Name="codsex" ColumnName="codsex" />
+                <ScalarProperty Name="nomsex" ColumnName="nomsex" />
+                <ScalarProperty Name="estsex" ColumnName="estsex" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_BuscarTicketPedidoXCodigo" FunctionName="bdciberelectrikapi20261Model.Store.SP_BuscarTicketPedidoXCodigo">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="bdciberelectrikapi20261Model.SP_BuscarTicketPedidoXCodigo_Result">
+                <ScalarProperty Name="nroped" ColumnName="nroped" />
+                <ScalarProperty Name="fecped" ColumnName="fecped" />
+                <ScalarProperty Name="estped" ColumnName="estped" />
+                <ScalarProperty Name="codemp" ColumnName="codemp" />
+                <ScalarProperty Name="nomemp" ColumnName="nomemp" />
+                <ScalarProperty Name="apepemp" ColumnName="apepemp" />
+                <ScalarProperty Name="codcli" ColumnName="codcli" />
+                <ScalarProperty Name="nomcli" ColumnName="nomcli" />
+                <ScalarProperty Name="apepcli" ColumnName="apepcli" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_BuscarTipoDocumentoXCodigo" FunctionName="bdciberelectrikapi20261Model.Store.SP_BuscarTipoDocumentoXCodigo">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="bdciberelectrikapi20261Model.SP_BuscarTipoDocumentoXCodigo_Result">
+                <ScalarProperty Name="codtipd" ColumnName="codtipd" />
+                <ScalarProperty Name="nomtipd" ColumnName="nomtipd" />
+                <ScalarProperty Name="esttipd" ColumnName="esttipd" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_CodigoCategoria" FunctionName="bdciberelectrikapi20261Model.Store.SP_CodigoCategoria" />
+          <FunctionImportMapping FunctionImportName="SP_CodigoCliente" FunctionName="bdciberelectrikapi20261Model.Store.SP_CodigoCliente" />
+          <FunctionImportMapping FunctionImportName="SP_CodigoDetalleTicketPedido" FunctionName="bdciberelectrikapi20261Model.Store.SP_CodigoDetalleTicketPedido" />
+          <FunctionImportMapping FunctionImportName="SP_CodigoDistrito" FunctionName="bdciberelectrikapi20261Model.Store.SP_CodigoDistrito" />
+          <FunctionImportMapping FunctionImportName="SP_CodigoEmpleado" FunctionName="bdciberelectrikapi20261Model.Store.SP_CodigoEmpleado" />
+          <FunctionImportMapping FunctionImportName="SP_CodigoMarca" FunctionName="bdciberelectrikapi20261Model.Store.SP_CodigoMarca" />
+          <FunctionImportMapping FunctionImportName="SP_CodigoProducto" FunctionName="bdciberelectrikapi20261Model.Store.SP_CodigoProducto" />
+          <FunctionImportMapping FunctionImportName="SP_CodigoRol" FunctionName="bdciberelectrikapi20261Model.Store.SP_CodigoRol" />
+          <FunctionImportMapping FunctionImportName="SP_CodigoSexo" FunctionName="bdciberelectrikapi20261Model.Store.SP_CodigoSexo" />
+          <FunctionImportMapping FunctionImportName="SP_CodigoTicketPedido" FunctionName="bdciberelectrikapi20261Model.Store.SP_CodigoTicketPedido" />
+          <FunctionImportMapping FunctionImportName="SP_CodigoTipoDocumento" FunctionName="bdciberelectrikapi20261Model.Store.SP_CodigoTipoDocumento" />
+          <FunctionImportMapping FunctionImportName="SP_EliminarCategoria" FunctionName="bdciberelectrikapi20261Model.Store.SP_EliminarCategoria" />
+          <FunctionImportMapping FunctionImportName="SP_EliminarCliente" FunctionName="bdciberelectrikapi20261Model.Store.SP_EliminarCliente" />
+          <FunctionImportMapping FunctionImportName="SP_EliminarDetalleTicketPedido" FunctionName="bdciberelectrikapi20261Model.Store.SP_EliminarDetalleTicketPedido" />
+          <FunctionImportMapping FunctionImportName="SP_EliminarDistrito" FunctionName="bdciberelectrikapi20261Model.Store.SP_EliminarDistrito" />
+          <FunctionImportMapping FunctionImportName="SP_EliminarEmpleado" FunctionName="bdciberelectrikapi20261Model.Store.SP_EliminarEmpleado" />
+          <FunctionImportMapping FunctionImportName="SP_EliminarMarca" FunctionName="bdciberelectrikapi20261Model.Store.SP_EliminarMarca" />
+          <FunctionImportMapping FunctionImportName="SP_EliminarProducto" FunctionName="bdciberelectrikapi20261Model.Store.SP_EliminarProducto" />
+          <FunctionImportMapping FunctionImportName="SP_EliminarRol" FunctionName="bdciberelectrikapi20261Model.Store.SP_EliminarRol" />
+          <FunctionImportMapping FunctionImportName="SP_EliminarSexo" FunctionName="bdciberelectrikapi20261Model.Store.SP_EliminarSexo" />
+          <FunctionImportMapping FunctionImportName="SP_EliminarTicketPedido" FunctionName="bdciberelectrikapi20261Model.Store.SP_EliminarTicketPedido" />
+          <FunctionImportMapping FunctionImportName="SP_EliminarTipoDocumento" FunctionName="bdciberelectrikapi20261Model.Store.SP_EliminarTipoDocumento" />
+          <FunctionImportMapping FunctionImportName="SP_HabilitarCategoria" FunctionName="bdciberelectrikapi20261Model.Store.SP_HabilitarCategoria" />
+          <FunctionImportMapping FunctionImportName="SP_HabilitarCliente" FunctionName="bdciberelectrikapi20261Model.Store.SP_HabilitarCliente" />
+          <FunctionImportMapping FunctionImportName="SP_HabilitarDistrito" FunctionName="bdciberelectrikapi20261Model.Store.SP_HabilitarDistrito" />
+          <FunctionImportMapping FunctionImportName="SP_HabilitarEmpleado" FunctionName="bdciberelectrikapi20261Model.Store.SP_HabilitarEmpleado" />
+          <FunctionImportMapping FunctionImportName="SP_HabilitarMarca" FunctionName="bdciberelectrikapi20261Model.Store.SP_HabilitarMarca" />
+          <FunctionImportMapping FunctionImportName="SP_HabilitarProducto" FunctionName="bdciberelectrikapi20261Model.Store.SP_HabilitarProducto" />
+          <FunctionImportMapping FunctionImportName="SP_HabilitarRol" FunctionName="bdciberelectrikapi20261Model.Store.SP_HabilitarRol" />
+          <FunctionImportMapping FunctionImportName="SP_HabilitarSexo" FunctionName="bdciberelectrikapi20261Model.Store.SP_HabilitarSexo" />
+          <FunctionImportMapping FunctionImportName="SP_HabilitarTicketPedido" FunctionName="bdciberelectrikapi20261Model.Store.SP_HabilitarTicketPedido" />
+          <FunctionImportMapping FunctionImportName="SP_HabilitarTipoDocumento" FunctionName="bdciberelectrikapi20261Model.Store.SP_HabilitarTipoDocumento" />
+          <FunctionImportMapping FunctionImportName="SP_MostrarCategoria" FunctionName="bdciberelectrikapi20261Model.Store.SP_MostrarCategoria">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="bdciberelectrikapi20261Model.SP_MostrarCategoria_Result">
+                <ScalarProperty Name="codcat" ColumnName="codcat" />
+                <ScalarProperty Name="nomcat" ColumnName="nomcat" />
+                <ScalarProperty Name="estcat" ColumnName="estcat" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_MostrarCategoriaTodo" FunctionName="bdciberelectrikapi20261Model.Store.SP_MostrarCategoriaTodo">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="bdciberelectrikapi20261Model.SP_MostrarCategoriaTodo_Result">
+                <ScalarProperty Name="codcat" ColumnName="codcat" />
+                <ScalarProperty Name="nomcat" ColumnName="nomcat" />
+                <ScalarProperty Name="estcat" ColumnName="estcat" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_MostrarCliente" FunctionName="bdciberelectrikapi20261Model.Store.SP_MostrarCliente">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="bdciberelectrikapi20261Model.SP_MostrarCliente_Result">
+                <ScalarProperty Name="codcli" ColumnName="codcli" />
+                <ScalarProperty Name="nomcli" ColumnName="nomcli" />
+                <ScalarProperty Name="apepcli" ColumnName="apepcli" />
+                <ScalarProperty Name="apemcli" ColumnName="apemcli" />
+                <ScalarProperty Name="doccli" ColumnName="doccli" />
+                <ScalarProperty Name="dircli" ColumnName="dircli" />
+                <ScalarProperty Name="telcli" ColumnName="telcli" />
+                <ScalarProperty Name="celcli" ColumnName="celcli" />
+                <ScalarProperty Name="corcli" ColumnName="corcli" />
+                <ScalarProperty Name="estcli" ColumnName="estcli" />
+                <ScalarProperty Name="coddis" ColumnName="coddis" />
+                <ScalarProperty Name="nomdis" ColumnName="nomdis" />
+                <ScalarProperty Name="codtipd" ColumnName="codtipd" />
+                <ScalarProperty Name="nomtipd" ColumnName="nomtipd" />
+                <ScalarProperty Name="codsex" ColumnName="codsex" />
+                <ScalarProperty Name="nomsex" ColumnName="nomsex" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_MostrarClienteTodo" FunctionName="bdciberelectrikapi20261Model.Store.SP_MostrarClienteTodo">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="bdciberelectrikapi20261Model.SP_MostrarClienteTodo_Result">
+                <ScalarProperty Name="codcli" ColumnName="codcli" />
+                <ScalarProperty Name="nomcli" ColumnName="nomcli" />
+                <ScalarProperty Name="apepcli" ColumnName="apepcli" />
+                <ScalarProperty Name="apemcli" ColumnName="apemcli" />
+                <ScalarProperty Name="doccli" ColumnName="doccli" />
+                <ScalarProperty Name="dircli" ColumnName="dircli" />
+                <ScalarProperty Name="telcli" ColumnName="telcli" />
+                <ScalarProperty Name="celcli" ColumnName="celcli" />
+                <ScalarProperty Name="corcli" ColumnName="corcli" />
+                <ScalarProperty Name="estcli" ColumnName="estcli" />
+                <ScalarProperty Name="coddis" ColumnName="coddis" />
+                <ScalarProperty Name="nomdis" ColumnName="nomdis" />
+                <ScalarProperty Name="codtipd" ColumnName="codtipd" />
+                <ScalarProperty Name="nomtipd" ColumnName="nomtipd" />
+                <ScalarProperty Name="codsex" ColumnName="codsex" />
+                <ScalarProperty Name="nomsex" ColumnName="nomsex" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_MostrarDetalleTicketPedido" FunctionName="bdciberelectrikapi20261Model.Store.SP_MostrarDetalleTicketPedido">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="bdciberelectrikapi20261Model.SP_MostrarDetalleTicketPedido_Result">
+                <ScalarProperty Name="nrodet" ColumnName="nrodet" />
+                <ScalarProperty Name="canent" ColumnName="canent" />
+                <ScalarProperty Name="preent" ColumnName="preent" />
+                <ScalarProperty Name="nroped" ColumnName="nroped" />
+                <ScalarProperty Name="fecped" ColumnName="fecped" />
+                <ScalarProperty Name="estped" ColumnName="estped" />
+                <ScalarProperty Name="codpro" ColumnName="codpro" />
+                <ScalarProperty Name="nompro" ColumnName="nompro" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_MostrarDetalleTicketPedidoTodo" FunctionName="bdciberelectrikapi20261Model.Store.SP_MostrarDetalleTicketPedidoTodo">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="bdciberelectrikapi20261Model.SP_MostrarDetalleTicketPedidoTodo_Result">
+                <ScalarProperty Name="nrodet" ColumnName="nrodet" />
+                <ScalarProperty Name="canent" ColumnName="canent" />
+                <ScalarProperty Name="preent" ColumnName="preent" />
+                <ScalarProperty Name="nroped" ColumnName="nroped" />
+                <ScalarProperty Name="fecped" ColumnName="fecped" />
+                <ScalarProperty Name="estped" ColumnName="estped" />
+                <ScalarProperty Name="codpro" ColumnName="codpro" />
+                <ScalarProperty Name="nompro" ColumnName="nompro" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_MostrarDistrito" FunctionName="bdciberelectrikapi20261Model.Store.SP_MostrarDistrito">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="bdciberelectrikapi20261Model.SP_MostrarDistrito_Result">
+                <ScalarProperty Name="coddis" ColumnName="coddis" />
+                <ScalarProperty Name="nomdis" ColumnName="nomdis" />
+                <ScalarProperty Name="estdis" ColumnName="estdis" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_MostrarDistritoTodo" FunctionName="bdciberelectrikapi20261Model.Store.SP_MostrarDistritoTodo">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="bdciberelectrikapi20261Model.SP_MostrarDistritoTodo_Result">
+                <ScalarProperty Name="coddis" ColumnName="coddis" />
+                <ScalarProperty Name="nomdis" ColumnName="nomdis" />
+                <ScalarProperty Name="estdis" ColumnName="estdis" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_MostrarEmpleado" FunctionName="bdciberelectrikapi20261Model.Store.SP_MostrarEmpleado">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="bdciberelectrikapi20261Model.SP_MostrarEmpleado_Result">
+                <ScalarProperty Name="codemp" ColumnName="codemp" />
+                <ScalarProperty Name="nomemp" ColumnName="nomemp" />
+                <ScalarProperty Name="apepemp" ColumnName="apepemp" />
+                <ScalarProperty Name="apememp" ColumnName="apememp" />
+                <ScalarProperty Name="docemp" ColumnName="docemp" />
+                <ScalarProperty Name="diremp" ColumnName="diremp" />
+                <ScalarProperty Name="telemp" ColumnName="telemp" />
+                <ScalarProperty Name="celemp" ColumnName="celemp" />
+                <ScalarProperty Name="coremp" ColumnName="coremp" />
+                <ScalarProperty Name="usuemp" ColumnName="usuemp" />
+                <ScalarProperty Name="estemp" ColumnName="estemp" />
+                <ScalarProperty Name="coddis" ColumnName="coddis" />
+                <ScalarProperty Name="nomdis" ColumnName="nomdis" />
+                <ScalarProperty Name="codrol" ColumnName="codrol" />
+                <ScalarProperty Name="nomrol" ColumnName="nomrol" />
+                <ScalarProperty Name="codtipd" ColumnName="codtipd" />
+                <ScalarProperty Name="nomtipd" ColumnName="nomtipd" />
+                <ScalarProperty Name="codsex" ColumnName="codsex" />
+                <ScalarProperty Name="nomsex" ColumnName="nomsex" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_MostrarEmpleadoTodo" FunctionName="bdciberelectrikapi20261Model.Store.SP_MostrarEmpleadoTodo">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="bdciberelectrikapi20261Model.SP_MostrarEmpleadoTodo_Result">
+                <ScalarProperty Name="codemp" ColumnName="codemp" />
+                <ScalarProperty Name="nomemp" ColumnName="nomemp" />
+                <ScalarProperty Name="apepemp" ColumnName="apepemp" />
+                <ScalarProperty Name="apememp" ColumnName="apememp" />
+                <ScalarProperty Name="docemp" ColumnName="docemp" />
+                <ScalarProperty Name="diremp" ColumnName="diremp" />
+                <ScalarProperty Name="telemp" ColumnName="telemp" />
+                <ScalarProperty Name="celemp" ColumnName="celemp" />
+                <ScalarProperty Name="coremp" ColumnName="coremp" />
+                <ScalarProperty Name="usuemp" ColumnName="usuemp" />
+                <ScalarProperty Name="estemp" ColumnName="estemp" />
+                <ScalarProperty Name="coddis" ColumnName="coddis" />
+                <ScalarProperty Name="nomdis" ColumnName="nomdis" />
+                <ScalarProperty Name="codrol" ColumnName="codrol" />
+                <ScalarProperty Name="nomrol" ColumnName="nomrol" />
+                <ScalarProperty Name="codtipd" ColumnName="codtipd" />
+                <ScalarProperty Name="nomtipd" ColumnName="nomtipd" />
+                <ScalarProperty Name="codsex" ColumnName="codsex" />
+                <ScalarProperty Name="nomsex" ColumnName="nomsex" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_MostrarMarca" FunctionName="bdciberelectrikapi20261Model.Store.SP_MostrarMarca">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="bdciberelectrikapi20261Model.SP_MostrarMarca_Result">
+                <ScalarProperty Name="codmar" ColumnName="codmar" />
+                <ScalarProperty Name="nommar" ColumnName="nommar" />
+                <ScalarProperty Name="estmar" ColumnName="estmar" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_MostrarMarcaTodo" FunctionName="bdciberelectrikapi20261Model.Store.SP_MostrarMarcaTodo">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="bdciberelectrikapi20261Model.SP_MostrarMarcaTodo_Result">
+                <ScalarProperty Name="codmar" ColumnName="codmar" />
+                <ScalarProperty Name="nommar" ColumnName="nommar" />
+                <ScalarProperty Name="estmar" ColumnName="estmar" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_MostrarProducto" FunctionName="bdciberelectrikapi20261Model.Store.SP_MostrarProducto">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="bdciberelectrikapi20261Model.SP_MostrarProducto_Result">
+                <ScalarProperty Name="codpro" ColumnName="codpro" />
+                <ScalarProperty Name="nompro" ColumnName="nompro" />
+                <ScalarProperty Name="despro" ColumnName="despro" />
+                <ScalarProperty Name="prepro" ColumnName="prepro" />
+                <ScalarProperty Name="canpro" ColumnName="canpro" />
+                <ScalarProperty Name="fecing" ColumnName="fecing" />
+                <ScalarProperty Name="estpro" ColumnName="estpro" />
+                <ScalarProperty Name="codcat" ColumnName="codcat" />
+                <ScalarProperty Name="nomcat" ColumnName="nomcat" />
+                <ScalarProperty Name="codmar" ColumnName="codmar" />
+                <ScalarProperty Name="nommar" ColumnName="nommar" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_MostrarProductoTodo" FunctionName="bdciberelectrikapi20261Model.Store.SP_MostrarProductoTodo">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="bdciberelectrikapi20261Model.SP_MostrarProductoTodo_Result">
+                <ScalarProperty Name="codpro" ColumnName="codpro" />
+                <ScalarProperty Name="nompro" ColumnName="nompro" />
+                <ScalarProperty Name="despro" ColumnName="despro" />
+                <ScalarProperty Name="prepro" ColumnName="prepro" />
+                <ScalarProperty Name="canpro" ColumnName="canpro" />
+                <ScalarProperty Name="fecing" ColumnName="fecing" />
+                <ScalarProperty Name="estpro" ColumnName="estpro" />
+                <ScalarProperty Name="codcat" ColumnName="codcat" />
+                <ScalarProperty Name="nomcat" ColumnName="nomcat" />
+                <ScalarProperty Name="codmar" ColumnName="codmar" />
+                <ScalarProperty Name="nommar" ColumnName="nommar" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_MostrarRol" FunctionName="bdciberelectrikapi20261Model.Store.SP_MostrarRol">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="bdciberelectrikapi20261Model.SP_MostrarRol_Result">
+                <ScalarProperty Name="codrol" ColumnName="codrol" />
+                <ScalarProperty Name="nomrol" ColumnName="nomrol" />
+                <ScalarProperty Name="estrol" ColumnName="estrol" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_MostrarRolTodo" FunctionName="bdciberelectrikapi20261Model.Store.SP_MostrarRolTodo">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="bdciberelectrikapi20261Model.SP_MostrarRolTodo_Result">
+                <ScalarProperty Name="codrol" ColumnName="codrol" />
+                <ScalarProperty Name="nomrol" ColumnName="nomrol" />
+                <ScalarProperty Name="estrol" ColumnName="estrol" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_MostrarSexo" FunctionName="bdciberelectrikapi20261Model.Store.SP_MostrarSexo">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="bdciberelectrikapi20261Model.SP_MostrarSexo_Result">
+                <ScalarProperty Name="codsex" ColumnName="codsex" />
+                <ScalarProperty Name="nomsex" ColumnName="nomsex" />
+                <ScalarProperty Name="estsex" ColumnName="estsex" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_MostrarSexoTodo" FunctionName="bdciberelectrikapi20261Model.Store.SP_MostrarSexoTodo">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="bdciberelectrikapi20261Model.SP_MostrarSexoTodo_Result">
+                <ScalarProperty Name="codsex" ColumnName="codsex" />
+                <ScalarProperty Name="nomsex" ColumnName="nomsex" />
+                <ScalarProperty Name="estsex" ColumnName="estsex" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_MostrarTicketPedido" FunctionName="bdciberelectrikapi20261Model.Store.SP_MostrarTicketPedido">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="bdciberelectrikapi20261Model.SP_MostrarTicketPedido_Result">
+                <ScalarProperty Name="nroped" ColumnName="nroped" />
+                <ScalarProperty Name="fecped" ColumnName="fecped" />
+                <ScalarProperty Name="estped" ColumnName="estped" />
+                <ScalarProperty Name="codemp" ColumnName="codemp" />
+                <ScalarProperty Name="nomemp" ColumnName="nomemp" />
+                <ScalarProperty Name="apepemp" ColumnName="apepemp" />
+                <ScalarProperty Name="codcli" ColumnName="codcli" />
+                <ScalarProperty Name="nomcli" ColumnName="nomcli" />
+                <ScalarProperty Name="apepcli" ColumnName="apepcli" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_MostrarTicketPedidoTodo" FunctionName="bdciberelectrikapi20261Model.Store.SP_MostrarTicketPedidoTodo">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="bdciberelectrikapi20261Model.SP_MostrarTicketPedidoTodo_Result">
+                <ScalarProperty Name="nroped" ColumnName="nroped" />
+                <ScalarProperty Name="fecped" ColumnName="fecped" />
+                <ScalarProperty Name="estped" ColumnName="estped" />
+                <ScalarProperty Name="codemp" ColumnName="codemp" />
+                <ScalarProperty Name="nomemp" ColumnName="nomemp" />
+                <ScalarProperty Name="apepemp" ColumnName="apepemp" />
+                <ScalarProperty Name="codcli" ColumnName="codcli" />
+                <ScalarProperty Name="nomcli" ColumnName="nomcli" />
+                <ScalarProperty Name="apepcli" ColumnName="apepcli" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_MostrarTipoDocumento" FunctionName="bdciberelectrikapi20261Model.Store.SP_MostrarTipoDocumento">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="bdciberelectrikapi20261Model.SP_MostrarTipoDocumento_Result">
+                <ScalarProperty Name="codtipd" ColumnName="codtipd" />
+                <ScalarProperty Name="nomtipd" ColumnName="nomtipd" />
+                <ScalarProperty Name="esttipd" ColumnName="esttipd" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_MostrarTipoDocumentoTodo" FunctionName="bdciberelectrikapi20261Model.Store.SP_MostrarTipoDocumentoTodo">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="bdciberelectrikapi20261Model.SP_MostrarTipoDocumentoTodo_Result">
+                <ScalarProperty Name="codtipd" ColumnName="codtipd" />
+                <ScalarProperty Name="nomtipd" ColumnName="nomtipd" />
+                <ScalarProperty Name="esttipd" ColumnName="esttipd" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_RegistrarCategoria" FunctionName="bdciberelectrikapi20261Model.Store.SP_RegistrarCategoria" />
+          <FunctionImportMapping FunctionImportName="SP_RegistrarCliente" FunctionName="bdciberelectrikapi20261Model.Store.SP_RegistrarCliente" />
+          <FunctionImportMapping FunctionImportName="SP_RegistrarDetalleTicketPedido" FunctionName="bdciberelectrikapi20261Model.Store.SP_RegistrarDetalleTicketPedido" />
+          <FunctionImportMapping FunctionImportName="SP_RegistrarDistrito" FunctionName="bdciberelectrikapi20261Model.Store.SP_RegistrarDistrito" />
+          <FunctionImportMapping FunctionImportName="SP_RegistrarEmpleado" FunctionName="bdciberelectrikapi20261Model.Store.SP_RegistrarEmpleado" />
+          <FunctionImportMapping FunctionImportName="SP_RegistrarMarca" FunctionName="bdciberelectrikapi20261Model.Store.SP_RegistrarMarca" />
+          <FunctionImportMapping FunctionImportName="SP_RegistrarProducto" FunctionName="bdciberelectrikapi20261Model.Store.SP_RegistrarProducto" />
+          <FunctionImportMapping FunctionImportName="SP_RegistrarRol" FunctionName="bdciberelectrikapi20261Model.Store.SP_RegistrarRol" />
+          <FunctionImportMapping FunctionImportName="SP_RegistrarSexo" FunctionName="bdciberelectrikapi20261Model.Store.SP_RegistrarSexo" />
+          <FunctionImportMapping FunctionImportName="SP_RegistrarTicketPedido" FunctionName="bdciberelectrikapi20261Model.Store.SP_RegistrarTicketPedido" />
+          <FunctionImportMapping FunctionImportName="SP_RegistrarTipoDocumento" FunctionName="bdciberelectrikapi20261Model.Store.SP_RegistrarTipoDocumento" />
         </EntityContainerMapping>
       </Mapping>
     </edmx:Mappings>

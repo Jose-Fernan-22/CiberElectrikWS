@@ -12,6 +12,8 @@ namespace pe.com.ciberelectrik.wcf
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
+    using System.Data.Entity.Core.Objects;
+    using System.Linq;
     
     public partial class bdciberelectrikapi20261Entities : DbContext
     {
@@ -37,5 +39,1052 @@ namespace pe.com.ciberelectrik.wcf
         public virtual DbSet<sexo> sexo { get; set; }
         public virtual DbSet<ticketpedido> ticketpedido { get; set; }
         public virtual DbSet<tipodocumento> tipodocumento { get; set; }
+    
+        public virtual int SP_ActualizarCategoria(Nullable<int> codigo, string nombre, Nullable<bool> estado)
+        {
+            var codigoParameter = codigo.HasValue ?
+                new ObjectParameter("codigo", codigo) :
+                new ObjectParameter("codigo", typeof(int));
+    
+            var nombreParameter = nombre != null ?
+                new ObjectParameter("nombre", nombre) :
+                new ObjectParameter("nombre", typeof(string));
+    
+            var estadoParameter = estado.HasValue ?
+                new ObjectParameter("estado", estado) :
+                new ObjectParameter("estado", typeof(bool));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SP_ActualizarCategoria", codigoParameter, nombreParameter, estadoParameter);
+        }
+    
+        public virtual int SP_ActualizarCliente(Nullable<int> codigo, string nomcli, string apepcli, string apemcli, string doccli, string dircli, string telcli, string celcli, string corcli, Nullable<bool> estcli, Nullable<int> coddis, Nullable<int> codtipd, Nullable<int> codsex)
+        {
+            var codigoParameter = codigo.HasValue ?
+                new ObjectParameter("codigo", codigo) :
+                new ObjectParameter("codigo", typeof(int));
+    
+            var nomcliParameter = nomcli != null ?
+                new ObjectParameter("nomcli", nomcli) :
+                new ObjectParameter("nomcli", typeof(string));
+    
+            var apepcliParameter = apepcli != null ?
+                new ObjectParameter("apepcli", apepcli) :
+                new ObjectParameter("apepcli", typeof(string));
+    
+            var apemcliParameter = apemcli != null ?
+                new ObjectParameter("apemcli", apemcli) :
+                new ObjectParameter("apemcli", typeof(string));
+    
+            var doccliParameter = doccli != null ?
+                new ObjectParameter("doccli", doccli) :
+                new ObjectParameter("doccli", typeof(string));
+    
+            var dircliParameter = dircli != null ?
+                new ObjectParameter("dircli", dircli) :
+                new ObjectParameter("dircli", typeof(string));
+    
+            var telcliParameter = telcli != null ?
+                new ObjectParameter("telcli", telcli) :
+                new ObjectParameter("telcli", typeof(string));
+    
+            var celcliParameter = celcli != null ?
+                new ObjectParameter("celcli", celcli) :
+                new ObjectParameter("celcli", typeof(string));
+    
+            var corcliParameter = corcli != null ?
+                new ObjectParameter("corcli", corcli) :
+                new ObjectParameter("corcli", typeof(string));
+    
+            var estcliParameter = estcli.HasValue ?
+                new ObjectParameter("estcli", estcli) :
+                new ObjectParameter("estcli", typeof(bool));
+    
+            var coddisParameter = coddis.HasValue ?
+                new ObjectParameter("coddis", coddis) :
+                new ObjectParameter("coddis", typeof(int));
+    
+            var codtipdParameter = codtipd.HasValue ?
+                new ObjectParameter("codtipd", codtipd) :
+                new ObjectParameter("codtipd", typeof(int));
+    
+            var codsexParameter = codsex.HasValue ?
+                new ObjectParameter("codsex", codsex) :
+                new ObjectParameter("codsex", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SP_ActualizarCliente", codigoParameter, nomcliParameter, apepcliParameter, apemcliParameter, doccliParameter, dircliParameter, telcliParameter, celcliParameter, corcliParameter, estcliParameter, coddisParameter, codtipdParameter, codsexParameter);
+        }
+    
+        public virtual int SP_ActualizarDetalleTicketPedido(Nullable<int> codigo, Nullable<int> canent, Nullable<decimal> preent, Nullable<int> nroped, Nullable<int> codpro)
+        {
+            var codigoParameter = codigo.HasValue ?
+                new ObjectParameter("codigo", codigo) :
+                new ObjectParameter("codigo", typeof(int));
+    
+            var canentParameter = canent.HasValue ?
+                new ObjectParameter("canent", canent) :
+                new ObjectParameter("canent", typeof(int));
+    
+            var preentParameter = preent.HasValue ?
+                new ObjectParameter("preent", preent) :
+                new ObjectParameter("preent", typeof(decimal));
+    
+            var nropedParameter = nroped.HasValue ?
+                new ObjectParameter("nroped", nroped) :
+                new ObjectParameter("nroped", typeof(int));
+    
+            var codproParameter = codpro.HasValue ?
+                new ObjectParameter("codpro", codpro) :
+                new ObjectParameter("codpro", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SP_ActualizarDetalleTicketPedido", codigoParameter, canentParameter, preentParameter, nropedParameter, codproParameter);
+        }
+    
+        public virtual int SP_ActualizarDistrito(Nullable<int> codigo, string nombre, Nullable<bool> estado)
+        {
+            var codigoParameter = codigo.HasValue ?
+                new ObjectParameter("codigo", codigo) :
+                new ObjectParameter("codigo", typeof(int));
+    
+            var nombreParameter = nombre != null ?
+                new ObjectParameter("nombre", nombre) :
+                new ObjectParameter("nombre", typeof(string));
+    
+            var estadoParameter = estado.HasValue ?
+                new ObjectParameter("estado", estado) :
+                new ObjectParameter("estado", typeof(bool));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SP_ActualizarDistrito", codigoParameter, nombreParameter, estadoParameter);
+        }
+    
+        public virtual int SP_ActualizarEmpleado(Nullable<int> codigo, string nomemp, string apepemp, string apememp, string docemp, string diremp, string telemp, string celemp, string coremp, string usuemp, string claemp, Nullable<bool> estemp, Nullable<int> coddis, Nullable<int> codrol, Nullable<int> codtipd, Nullable<int> codsex)
+        {
+            var codigoParameter = codigo.HasValue ?
+                new ObjectParameter("codigo", codigo) :
+                new ObjectParameter("codigo", typeof(int));
+    
+            var nomempParameter = nomemp != null ?
+                new ObjectParameter("nomemp", nomemp) :
+                new ObjectParameter("nomemp", typeof(string));
+    
+            var apepempParameter = apepemp != null ?
+                new ObjectParameter("apepemp", apepemp) :
+                new ObjectParameter("apepemp", typeof(string));
+    
+            var apemempParameter = apememp != null ?
+                new ObjectParameter("apememp", apememp) :
+                new ObjectParameter("apememp", typeof(string));
+    
+            var docempParameter = docemp != null ?
+                new ObjectParameter("docemp", docemp) :
+                new ObjectParameter("docemp", typeof(string));
+    
+            var dirempParameter = diremp != null ?
+                new ObjectParameter("diremp", diremp) :
+                new ObjectParameter("diremp", typeof(string));
+    
+            var telempParameter = telemp != null ?
+                new ObjectParameter("telemp", telemp) :
+                new ObjectParameter("telemp", typeof(string));
+    
+            var celempParameter = celemp != null ?
+                new ObjectParameter("celemp", celemp) :
+                new ObjectParameter("celemp", typeof(string));
+    
+            var corempParameter = coremp != null ?
+                new ObjectParameter("coremp", coremp) :
+                new ObjectParameter("coremp", typeof(string));
+    
+            var usuempParameter = usuemp != null ?
+                new ObjectParameter("usuemp", usuemp) :
+                new ObjectParameter("usuemp", typeof(string));
+    
+            var claempParameter = claemp != null ?
+                new ObjectParameter("claemp", claemp) :
+                new ObjectParameter("claemp", typeof(string));
+    
+            var estempParameter = estemp.HasValue ?
+                new ObjectParameter("estemp", estemp) :
+                new ObjectParameter("estemp", typeof(bool));
+    
+            var coddisParameter = coddis.HasValue ?
+                new ObjectParameter("coddis", coddis) :
+                new ObjectParameter("coddis", typeof(int));
+    
+            var codrolParameter = codrol.HasValue ?
+                new ObjectParameter("codrol", codrol) :
+                new ObjectParameter("codrol", typeof(int));
+    
+            var codtipdParameter = codtipd.HasValue ?
+                new ObjectParameter("codtipd", codtipd) :
+                new ObjectParameter("codtipd", typeof(int));
+    
+            var codsexParameter = codsex.HasValue ?
+                new ObjectParameter("codsex", codsex) :
+                new ObjectParameter("codsex", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SP_ActualizarEmpleado", codigoParameter, nomempParameter, apepempParameter, apemempParameter, docempParameter, dirempParameter, telempParameter, celempParameter, corempParameter, usuempParameter, claempParameter, estempParameter, coddisParameter, codrolParameter, codtipdParameter, codsexParameter);
+        }
+    
+        public virtual int SP_ActualizarMarca(Nullable<int> codigo, string nombre, Nullable<bool> estado)
+        {
+            var codigoParameter = codigo.HasValue ?
+                new ObjectParameter("codigo", codigo) :
+                new ObjectParameter("codigo", typeof(int));
+    
+            var nombreParameter = nombre != null ?
+                new ObjectParameter("nombre", nombre) :
+                new ObjectParameter("nombre", typeof(string));
+    
+            var estadoParameter = estado.HasValue ?
+                new ObjectParameter("estado", estado) :
+                new ObjectParameter("estado", typeof(bool));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SP_ActualizarMarca", codigoParameter, nombreParameter, estadoParameter);
+        }
+    
+        public virtual int SP_ActualizarProducto(Nullable<int> codigo, string nombre, string descripcion, Nullable<decimal> precio, Nullable<int> cantidad, Nullable<System.DateTime> fecha, Nullable<bool> estado, Nullable<int> codcat, Nullable<int> codmar)
+        {
+            var codigoParameter = codigo.HasValue ?
+                new ObjectParameter("codigo", codigo) :
+                new ObjectParameter("codigo", typeof(int));
+    
+            var nombreParameter = nombre != null ?
+                new ObjectParameter("nombre", nombre) :
+                new ObjectParameter("nombre", typeof(string));
+    
+            var descripcionParameter = descripcion != null ?
+                new ObjectParameter("descripcion", descripcion) :
+                new ObjectParameter("descripcion", typeof(string));
+    
+            var precioParameter = precio.HasValue ?
+                new ObjectParameter("precio", precio) :
+                new ObjectParameter("precio", typeof(decimal));
+    
+            var cantidadParameter = cantidad.HasValue ?
+                new ObjectParameter("cantidad", cantidad) :
+                new ObjectParameter("cantidad", typeof(int));
+    
+            var fechaParameter = fecha.HasValue ?
+                new ObjectParameter("fecha", fecha) :
+                new ObjectParameter("fecha", typeof(System.DateTime));
+    
+            var estadoParameter = estado.HasValue ?
+                new ObjectParameter("estado", estado) :
+                new ObjectParameter("estado", typeof(bool));
+    
+            var codcatParameter = codcat.HasValue ?
+                new ObjectParameter("codcat", codcat) :
+                new ObjectParameter("codcat", typeof(int));
+    
+            var codmarParameter = codmar.HasValue ?
+                new ObjectParameter("codmar", codmar) :
+                new ObjectParameter("codmar", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SP_ActualizarProducto", codigoParameter, nombreParameter, descripcionParameter, precioParameter, cantidadParameter, fechaParameter, estadoParameter, codcatParameter, codmarParameter);
+        }
+    
+        public virtual int SP_ActualizarRol(Nullable<int> codigo, string nombre, Nullable<bool> estado)
+        {
+            var codigoParameter = codigo.HasValue ?
+                new ObjectParameter("codigo", codigo) :
+                new ObjectParameter("codigo", typeof(int));
+    
+            var nombreParameter = nombre != null ?
+                new ObjectParameter("nombre", nombre) :
+                new ObjectParameter("nombre", typeof(string));
+    
+            var estadoParameter = estado.HasValue ?
+                new ObjectParameter("estado", estado) :
+                new ObjectParameter("estado", typeof(bool));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SP_ActualizarRol", codigoParameter, nombreParameter, estadoParameter);
+        }
+    
+        public virtual int SP_ActualizarSexo(Nullable<int> codigo, string nombre, Nullable<bool> estado)
+        {
+            var codigoParameter = codigo.HasValue ?
+                new ObjectParameter("codigo", codigo) :
+                new ObjectParameter("codigo", typeof(int));
+    
+            var nombreParameter = nombre != null ?
+                new ObjectParameter("nombre", nombre) :
+                new ObjectParameter("nombre", typeof(string));
+    
+            var estadoParameter = estado.HasValue ?
+                new ObjectParameter("estado", estado) :
+                new ObjectParameter("estado", typeof(bool));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SP_ActualizarSexo", codigoParameter, nombreParameter, estadoParameter);
+        }
+    
+        public virtual int SP_ActualizarTicketPedido(Nullable<int> codigo, Nullable<System.DateTime> fecped, Nullable<int> codemp, Nullable<int> codcli, Nullable<bool> estped)
+        {
+            var codigoParameter = codigo.HasValue ?
+                new ObjectParameter("codigo", codigo) :
+                new ObjectParameter("codigo", typeof(int));
+    
+            var fecpedParameter = fecped.HasValue ?
+                new ObjectParameter("fecped", fecped) :
+                new ObjectParameter("fecped", typeof(System.DateTime));
+    
+            var codempParameter = codemp.HasValue ?
+                new ObjectParameter("codemp", codemp) :
+                new ObjectParameter("codemp", typeof(int));
+    
+            var codcliParameter = codcli.HasValue ?
+                new ObjectParameter("codcli", codcli) :
+                new ObjectParameter("codcli", typeof(int));
+    
+            var estpedParameter = estped.HasValue ?
+                new ObjectParameter("estped", estped) :
+                new ObjectParameter("estped", typeof(bool));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SP_ActualizarTicketPedido", codigoParameter, fecpedParameter, codempParameter, codcliParameter, estpedParameter);
+        }
+    
+        public virtual int SP_ActualizarTipoDocumento(Nullable<int> codigo, string nombre, Nullable<bool> estado)
+        {
+            var codigoParameter = codigo.HasValue ?
+                new ObjectParameter("codigo", codigo) :
+                new ObjectParameter("codigo", typeof(int));
+    
+            var nombreParameter = nombre != null ?
+                new ObjectParameter("nombre", nombre) :
+                new ObjectParameter("nombre", typeof(string));
+    
+            var estadoParameter = estado.HasValue ?
+                new ObjectParameter("estado", estado) :
+                new ObjectParameter("estado", typeof(bool));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SP_ActualizarTipoDocumento", codigoParameter, nombreParameter, estadoParameter);
+        }
+    
+        public virtual ObjectResult<SP_BuscarCategoriaXCodigo_Result> SP_BuscarCategoriaXCodigo(Nullable<int> codigo)
+        {
+            var codigoParameter = codigo.HasValue ?
+                new ObjectParameter("codigo", codigo) :
+                new ObjectParameter("codigo", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SP_BuscarCategoriaXCodigo_Result>("SP_BuscarCategoriaXCodigo", codigoParameter);
+        }
+    
+        public virtual ObjectResult<SP_BuscarClienteXCodigo_Result> SP_BuscarClienteXCodigo(Nullable<int> codigo)
+        {
+            var codigoParameter = codigo.HasValue ?
+                new ObjectParameter("codigo", codigo) :
+                new ObjectParameter("codigo", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SP_BuscarClienteXCodigo_Result>("SP_BuscarClienteXCodigo", codigoParameter);
+        }
+    
+        public virtual ObjectResult<SP_BuscarDetalleTicketPedidoXCodigo_Result> SP_BuscarDetalleTicketPedidoXCodigo(Nullable<int> codigo)
+        {
+            var codigoParameter = codigo.HasValue ?
+                new ObjectParameter("codigo", codigo) :
+                new ObjectParameter("codigo", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SP_BuscarDetalleTicketPedidoXCodigo_Result>("SP_BuscarDetalleTicketPedidoXCodigo", codigoParameter);
+        }
+    
+        public virtual ObjectResult<SP_BuscarDistritoXCodigo_Result> SP_BuscarDistritoXCodigo(Nullable<int> codigo)
+        {
+            var codigoParameter = codigo.HasValue ?
+                new ObjectParameter("codigo", codigo) :
+                new ObjectParameter("codigo", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SP_BuscarDistritoXCodigo_Result>("SP_BuscarDistritoXCodigo", codigoParameter);
+        }
+    
+        public virtual ObjectResult<SP_BuscarEmpleadoXCodigo_Result> SP_BuscarEmpleadoXCodigo(Nullable<int> codigo)
+        {
+            var codigoParameter = codigo.HasValue ?
+                new ObjectParameter("codigo", codigo) :
+                new ObjectParameter("codigo", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SP_BuscarEmpleadoXCodigo_Result>("SP_BuscarEmpleadoXCodigo", codigoParameter);
+        }
+    
+        public virtual ObjectResult<SP_BuscarMarcaXCodigo_Result> SP_BuscarMarcaXCodigo(Nullable<int> codigo)
+        {
+            var codigoParameter = codigo.HasValue ?
+                new ObjectParameter("codigo", codigo) :
+                new ObjectParameter("codigo", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SP_BuscarMarcaXCodigo_Result>("SP_BuscarMarcaXCodigo", codigoParameter);
+        }
+    
+        public virtual ObjectResult<SP_BuscarProductoXCodigo_Result> SP_BuscarProductoXCodigo(Nullable<int> codigo)
+        {
+            var codigoParameter = codigo.HasValue ?
+                new ObjectParameter("codigo", codigo) :
+                new ObjectParameter("codigo", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SP_BuscarProductoXCodigo_Result>("SP_BuscarProductoXCodigo", codigoParameter);
+        }
+    
+        public virtual ObjectResult<SP_BuscarRolXCodigo_Result> SP_BuscarRolXCodigo(Nullable<int> codigo)
+        {
+            var codigoParameter = codigo.HasValue ?
+                new ObjectParameter("codigo", codigo) :
+                new ObjectParameter("codigo", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SP_BuscarRolXCodigo_Result>("SP_BuscarRolXCodigo", codigoParameter);
+        }
+    
+        public virtual ObjectResult<SP_BuscarSexoXCodigo_Result> SP_BuscarSexoXCodigo(Nullable<int> codigo)
+        {
+            var codigoParameter = codigo.HasValue ?
+                new ObjectParameter("codigo", codigo) :
+                new ObjectParameter("codigo", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SP_BuscarSexoXCodigo_Result>("SP_BuscarSexoXCodigo", codigoParameter);
+        }
+    
+        public virtual ObjectResult<SP_BuscarTicketPedidoXCodigo_Result> SP_BuscarTicketPedidoXCodigo(Nullable<int> codigo)
+        {
+            var codigoParameter = codigo.HasValue ?
+                new ObjectParameter("codigo", codigo) :
+                new ObjectParameter("codigo", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SP_BuscarTicketPedidoXCodigo_Result>("SP_BuscarTicketPedidoXCodigo", codigoParameter);
+        }
+    
+        public virtual ObjectResult<SP_BuscarTipoDocumentoXCodigo_Result> SP_BuscarTipoDocumentoXCodigo(Nullable<int> codigo)
+        {
+            var codigoParameter = codigo.HasValue ?
+                new ObjectParameter("codigo", codigo) :
+                new ObjectParameter("codigo", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SP_BuscarTipoDocumentoXCodigo_Result>("SP_BuscarTipoDocumentoXCodigo", codigoParameter);
+        }
+    
+        public virtual ObjectResult<Nullable<int>> SP_CodigoCategoria()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Nullable<int>>("SP_CodigoCategoria");
+        }
+    
+        public virtual ObjectResult<Nullable<int>> SP_CodigoCliente()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Nullable<int>>("SP_CodigoCliente");
+        }
+    
+        public virtual ObjectResult<Nullable<int>> SP_CodigoDetalleTicketPedido()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Nullable<int>>("SP_CodigoDetalleTicketPedido");
+        }
+    
+        public virtual ObjectResult<Nullable<int>> SP_CodigoDistrito()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Nullable<int>>("SP_CodigoDistrito");
+        }
+    
+        public virtual ObjectResult<Nullable<int>> SP_CodigoEmpleado()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Nullable<int>>("SP_CodigoEmpleado");
+        }
+    
+        public virtual ObjectResult<Nullable<int>> SP_CodigoMarca()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Nullable<int>>("SP_CodigoMarca");
+        }
+    
+        public virtual ObjectResult<Nullable<int>> SP_CodigoProducto()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Nullable<int>>("SP_CodigoProducto");
+        }
+    
+        public virtual ObjectResult<Nullable<int>> SP_CodigoRol()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Nullable<int>>("SP_CodigoRol");
+        }
+    
+        public virtual ObjectResult<Nullable<int>> SP_CodigoSexo()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Nullable<int>>("SP_CodigoSexo");
+        }
+    
+        public virtual ObjectResult<Nullable<int>> SP_CodigoTicketPedido()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Nullable<int>>("SP_CodigoTicketPedido");
+        }
+    
+        public virtual ObjectResult<Nullable<int>> SP_CodigoTipoDocumento()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Nullable<int>>("SP_CodigoTipoDocumento");
+        }
+    
+        public virtual int SP_EliminarCategoria(Nullable<int> codigo)
+        {
+            var codigoParameter = codigo.HasValue ?
+                new ObjectParameter("codigo", codigo) :
+                new ObjectParameter("codigo", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SP_EliminarCategoria", codigoParameter);
+        }
+    
+        public virtual int SP_EliminarCliente(Nullable<int> codigo)
+        {
+            var codigoParameter = codigo.HasValue ?
+                new ObjectParameter("codigo", codigo) :
+                new ObjectParameter("codigo", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SP_EliminarCliente", codigoParameter);
+        }
+    
+        public virtual int SP_EliminarDetalleTicketPedido(Nullable<int> codigo)
+        {
+            var codigoParameter = codigo.HasValue ?
+                new ObjectParameter("codigo", codigo) :
+                new ObjectParameter("codigo", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SP_EliminarDetalleTicketPedido", codigoParameter);
+        }
+    
+        public virtual int SP_EliminarDistrito(Nullable<int> codigo)
+        {
+            var codigoParameter = codigo.HasValue ?
+                new ObjectParameter("codigo", codigo) :
+                new ObjectParameter("codigo", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SP_EliminarDistrito", codigoParameter);
+        }
+    
+        public virtual int SP_EliminarEmpleado(Nullable<int> codigo)
+        {
+            var codigoParameter = codigo.HasValue ?
+                new ObjectParameter("codigo", codigo) :
+                new ObjectParameter("codigo", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SP_EliminarEmpleado", codigoParameter);
+        }
+    
+        public virtual int SP_EliminarMarca(Nullable<int> codigo)
+        {
+            var codigoParameter = codigo.HasValue ?
+                new ObjectParameter("codigo", codigo) :
+                new ObjectParameter("codigo", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SP_EliminarMarca", codigoParameter);
+        }
+    
+        public virtual int SP_EliminarProducto(Nullable<int> codigo)
+        {
+            var codigoParameter = codigo.HasValue ?
+                new ObjectParameter("codigo", codigo) :
+                new ObjectParameter("codigo", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SP_EliminarProducto", codigoParameter);
+        }
+    
+        public virtual int SP_EliminarRol(Nullable<int> codigo)
+        {
+            var codigoParameter = codigo.HasValue ?
+                new ObjectParameter("codigo", codigo) :
+                new ObjectParameter("codigo", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SP_EliminarRol", codigoParameter);
+        }
+    
+        public virtual int SP_EliminarSexo(Nullable<int> codigo)
+        {
+            var codigoParameter = codigo.HasValue ?
+                new ObjectParameter("codigo", codigo) :
+                new ObjectParameter("codigo", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SP_EliminarSexo", codigoParameter);
+        }
+    
+        public virtual int SP_EliminarTicketPedido(Nullable<int> codigo)
+        {
+            var codigoParameter = codigo.HasValue ?
+                new ObjectParameter("codigo", codigo) :
+                new ObjectParameter("codigo", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SP_EliminarTicketPedido", codigoParameter);
+        }
+    
+        public virtual int SP_EliminarTipoDocumento(Nullable<int> codigo)
+        {
+            var codigoParameter = codigo.HasValue ?
+                new ObjectParameter("codigo", codigo) :
+                new ObjectParameter("codigo", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SP_EliminarTipoDocumento", codigoParameter);
+        }
+    
+        public virtual int SP_HabilitarCategoria(Nullable<int> codigo)
+        {
+            var codigoParameter = codigo.HasValue ?
+                new ObjectParameter("codigo", codigo) :
+                new ObjectParameter("codigo", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SP_HabilitarCategoria", codigoParameter);
+        }
+    
+        public virtual int SP_HabilitarCliente(Nullable<int> codigo)
+        {
+            var codigoParameter = codigo.HasValue ?
+                new ObjectParameter("codigo", codigo) :
+                new ObjectParameter("codigo", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SP_HabilitarCliente", codigoParameter);
+        }
+    
+        public virtual int SP_HabilitarDistrito(Nullable<int> codigo)
+        {
+            var codigoParameter = codigo.HasValue ?
+                new ObjectParameter("codigo", codigo) :
+                new ObjectParameter("codigo", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SP_HabilitarDistrito", codigoParameter);
+        }
+    
+        public virtual int SP_HabilitarEmpleado(Nullable<int> codigo)
+        {
+            var codigoParameter = codigo.HasValue ?
+                new ObjectParameter("codigo", codigo) :
+                new ObjectParameter("codigo", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SP_HabilitarEmpleado", codigoParameter);
+        }
+    
+        public virtual int SP_HabilitarMarca(Nullable<int> codigo)
+        {
+            var codigoParameter = codigo.HasValue ?
+                new ObjectParameter("codigo", codigo) :
+                new ObjectParameter("codigo", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SP_HabilitarMarca", codigoParameter);
+        }
+    
+        public virtual int SP_HabilitarProducto(Nullable<int> codigo)
+        {
+            var codigoParameter = codigo.HasValue ?
+                new ObjectParameter("codigo", codigo) :
+                new ObjectParameter("codigo", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SP_HabilitarProducto", codigoParameter);
+        }
+    
+        public virtual int SP_HabilitarRol(Nullable<int> codigo)
+        {
+            var codigoParameter = codigo.HasValue ?
+                new ObjectParameter("codigo", codigo) :
+                new ObjectParameter("codigo", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SP_HabilitarRol", codigoParameter);
+        }
+    
+        public virtual int SP_HabilitarSexo(Nullable<int> codigo)
+        {
+            var codigoParameter = codigo.HasValue ?
+                new ObjectParameter("codigo", codigo) :
+                new ObjectParameter("codigo", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SP_HabilitarSexo", codigoParameter);
+        }
+    
+        public virtual int SP_HabilitarTicketPedido(Nullable<int> codigo)
+        {
+            var codigoParameter = codigo.HasValue ?
+                new ObjectParameter("codigo", codigo) :
+                new ObjectParameter("codigo", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SP_HabilitarTicketPedido", codigoParameter);
+        }
+    
+        public virtual int SP_HabilitarTipoDocumento(Nullable<int> codigo)
+        {
+            var codigoParameter = codigo.HasValue ?
+                new ObjectParameter("codigo", codigo) :
+                new ObjectParameter("codigo", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SP_HabilitarTipoDocumento", codigoParameter);
+        }
+    
+        public virtual ObjectResult<SP_MostrarCategoria_Result> SP_MostrarCategoria()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SP_MostrarCategoria_Result>("SP_MostrarCategoria");
+        }
+    
+        public virtual ObjectResult<SP_MostrarCategoriaTodo_Result> SP_MostrarCategoriaTodo()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SP_MostrarCategoriaTodo_Result>("SP_MostrarCategoriaTodo");
+        }
+    
+        public virtual ObjectResult<SP_MostrarCliente_Result> SP_MostrarCliente()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SP_MostrarCliente_Result>("SP_MostrarCliente");
+        }
+    
+        public virtual ObjectResult<SP_MostrarClienteTodo_Result> SP_MostrarClienteTodo()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SP_MostrarClienteTodo_Result>("SP_MostrarClienteTodo");
+        }
+    
+        public virtual ObjectResult<SP_MostrarDetalleTicketPedido_Result> SP_MostrarDetalleTicketPedido()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SP_MostrarDetalleTicketPedido_Result>("SP_MostrarDetalleTicketPedido");
+        }
+    
+        public virtual ObjectResult<SP_MostrarDetalleTicketPedidoTodo_Result> SP_MostrarDetalleTicketPedidoTodo()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SP_MostrarDetalleTicketPedidoTodo_Result>("SP_MostrarDetalleTicketPedidoTodo");
+        }
+    
+        public virtual ObjectResult<SP_MostrarDistrito_Result> SP_MostrarDistrito()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SP_MostrarDistrito_Result>("SP_MostrarDistrito");
+        }
+    
+        public virtual ObjectResult<SP_MostrarDistritoTodo_Result> SP_MostrarDistritoTodo()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SP_MostrarDistritoTodo_Result>("SP_MostrarDistritoTodo");
+        }
+    
+        public virtual ObjectResult<SP_MostrarEmpleado_Result> SP_MostrarEmpleado()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SP_MostrarEmpleado_Result>("SP_MostrarEmpleado");
+        }
+    
+        public virtual ObjectResult<SP_MostrarEmpleadoTodo_Result> SP_MostrarEmpleadoTodo()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SP_MostrarEmpleadoTodo_Result>("SP_MostrarEmpleadoTodo");
+        }
+    
+        public virtual ObjectResult<SP_MostrarMarca_Result> SP_MostrarMarca()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SP_MostrarMarca_Result>("SP_MostrarMarca");
+        }
+    
+        public virtual ObjectResult<SP_MostrarMarcaTodo_Result> SP_MostrarMarcaTodo()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SP_MostrarMarcaTodo_Result>("SP_MostrarMarcaTodo");
+        }
+    
+        public virtual ObjectResult<SP_MostrarProducto_Result> SP_MostrarProducto()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SP_MostrarProducto_Result>("SP_MostrarProducto");
+        }
+    
+        public virtual ObjectResult<SP_MostrarProductoTodo_Result> SP_MostrarProductoTodo()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SP_MostrarProductoTodo_Result>("SP_MostrarProductoTodo");
+        }
+    
+        public virtual ObjectResult<SP_MostrarRol_Result> SP_MostrarRol()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SP_MostrarRol_Result>("SP_MostrarRol");
+        }
+    
+        public virtual ObjectResult<SP_MostrarRolTodo_Result> SP_MostrarRolTodo()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SP_MostrarRolTodo_Result>("SP_MostrarRolTodo");
+        }
+    
+        public virtual ObjectResult<SP_MostrarSexo_Result> SP_MostrarSexo()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SP_MostrarSexo_Result>("SP_MostrarSexo");
+        }
+    
+        public virtual ObjectResult<SP_MostrarSexoTodo_Result> SP_MostrarSexoTodo()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SP_MostrarSexoTodo_Result>("SP_MostrarSexoTodo");
+        }
+    
+        public virtual ObjectResult<SP_MostrarTicketPedido_Result> SP_MostrarTicketPedido()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SP_MostrarTicketPedido_Result>("SP_MostrarTicketPedido");
+        }
+    
+        public virtual ObjectResult<SP_MostrarTicketPedidoTodo_Result> SP_MostrarTicketPedidoTodo()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SP_MostrarTicketPedidoTodo_Result>("SP_MostrarTicketPedidoTodo");
+        }
+    
+        public virtual ObjectResult<SP_MostrarTipoDocumento_Result> SP_MostrarTipoDocumento()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SP_MostrarTipoDocumento_Result>("SP_MostrarTipoDocumento");
+        }
+    
+        public virtual ObjectResult<SP_MostrarTipoDocumentoTodo_Result> SP_MostrarTipoDocumentoTodo()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SP_MostrarTipoDocumentoTodo_Result>("SP_MostrarTipoDocumentoTodo");
+        }
+    
+        public virtual int SP_RegistrarCategoria(string nombre, Nullable<bool> estado)
+        {
+            var nombreParameter = nombre != null ?
+                new ObjectParameter("nombre", nombre) :
+                new ObjectParameter("nombre", typeof(string));
+    
+            var estadoParameter = estado.HasValue ?
+                new ObjectParameter("estado", estado) :
+                new ObjectParameter("estado", typeof(bool));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SP_RegistrarCategoria", nombreParameter, estadoParameter);
+        }
+    
+        public virtual int SP_RegistrarCliente(string nomcli, string apepcli, string apemcli, string doccli, string dircli, string telcli, string celcli, string corcli, Nullable<bool> estcli, Nullable<int> coddis, Nullable<int> codtipd, Nullable<int> codsex)
+        {
+            var nomcliParameter = nomcli != null ?
+                new ObjectParameter("nomcli", nomcli) :
+                new ObjectParameter("nomcli", typeof(string));
+    
+            var apepcliParameter = apepcli != null ?
+                new ObjectParameter("apepcli", apepcli) :
+                new ObjectParameter("apepcli", typeof(string));
+    
+            var apemcliParameter = apemcli != null ?
+                new ObjectParameter("apemcli", apemcli) :
+                new ObjectParameter("apemcli", typeof(string));
+    
+            var doccliParameter = doccli != null ?
+                new ObjectParameter("doccli", doccli) :
+                new ObjectParameter("doccli", typeof(string));
+    
+            var dircliParameter = dircli != null ?
+                new ObjectParameter("dircli", dircli) :
+                new ObjectParameter("dircli", typeof(string));
+    
+            var telcliParameter = telcli != null ?
+                new ObjectParameter("telcli", telcli) :
+                new ObjectParameter("telcli", typeof(string));
+    
+            var celcliParameter = celcli != null ?
+                new ObjectParameter("celcli", celcli) :
+                new ObjectParameter("celcli", typeof(string));
+    
+            var corcliParameter = corcli != null ?
+                new ObjectParameter("corcli", corcli) :
+                new ObjectParameter("corcli", typeof(string));
+    
+            var estcliParameter = estcli.HasValue ?
+                new ObjectParameter("estcli", estcli) :
+                new ObjectParameter("estcli", typeof(bool));
+    
+            var coddisParameter = coddis.HasValue ?
+                new ObjectParameter("coddis", coddis) :
+                new ObjectParameter("coddis", typeof(int));
+    
+            var codtipdParameter = codtipd.HasValue ?
+                new ObjectParameter("codtipd", codtipd) :
+                new ObjectParameter("codtipd", typeof(int));
+    
+            var codsexParameter = codsex.HasValue ?
+                new ObjectParameter("codsex", codsex) :
+                new ObjectParameter("codsex", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SP_RegistrarCliente", nomcliParameter, apepcliParameter, apemcliParameter, doccliParameter, dircliParameter, telcliParameter, celcliParameter, corcliParameter, estcliParameter, coddisParameter, codtipdParameter, codsexParameter);
+        }
+    
+        public virtual int SP_RegistrarDetalleTicketPedido(Nullable<int> canent, Nullable<decimal> preent, Nullable<int> nroped, Nullable<int> codpro)
+        {
+            var canentParameter = canent.HasValue ?
+                new ObjectParameter("canent", canent) :
+                new ObjectParameter("canent", typeof(int));
+    
+            var preentParameter = preent.HasValue ?
+                new ObjectParameter("preent", preent) :
+                new ObjectParameter("preent", typeof(decimal));
+    
+            var nropedParameter = nroped.HasValue ?
+                new ObjectParameter("nroped", nroped) :
+                new ObjectParameter("nroped", typeof(int));
+    
+            var codproParameter = codpro.HasValue ?
+                new ObjectParameter("codpro", codpro) :
+                new ObjectParameter("codpro", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SP_RegistrarDetalleTicketPedido", canentParameter, preentParameter, nropedParameter, codproParameter);
+        }
+    
+        public virtual int SP_RegistrarDistrito(string nombre, Nullable<bool> estado)
+        {
+            var nombreParameter = nombre != null ?
+                new ObjectParameter("nombre", nombre) :
+                new ObjectParameter("nombre", typeof(string));
+    
+            var estadoParameter = estado.HasValue ?
+                new ObjectParameter("estado", estado) :
+                new ObjectParameter("estado", typeof(bool));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SP_RegistrarDistrito", nombreParameter, estadoParameter);
+        }
+    
+        public virtual int SP_RegistrarEmpleado(string nomemp, string apepemp, string apememp, string docemp, string diremp, string telemp, string celemp, string coremp, string usuemp, string claemp, Nullable<bool> estemp, Nullable<int> coddis, Nullable<int> codrol, Nullable<int> codtipd, Nullable<int> codsex)
+        {
+            var nomempParameter = nomemp != null ?
+                new ObjectParameter("nomemp", nomemp) :
+                new ObjectParameter("nomemp", typeof(string));
+    
+            var apepempParameter = apepemp != null ?
+                new ObjectParameter("apepemp", apepemp) :
+                new ObjectParameter("apepemp", typeof(string));
+    
+            var apemempParameter = apememp != null ?
+                new ObjectParameter("apememp", apememp) :
+                new ObjectParameter("apememp", typeof(string));
+    
+            var docempParameter = docemp != null ?
+                new ObjectParameter("docemp", docemp) :
+                new ObjectParameter("docemp", typeof(string));
+    
+            var dirempParameter = diremp != null ?
+                new ObjectParameter("diremp", diremp) :
+                new ObjectParameter("diremp", typeof(string));
+    
+            var telempParameter = telemp != null ?
+                new ObjectParameter("telemp", telemp) :
+                new ObjectParameter("telemp", typeof(string));
+    
+            var celempParameter = celemp != null ?
+                new ObjectParameter("celemp", celemp) :
+                new ObjectParameter("celemp", typeof(string));
+    
+            var corempParameter = coremp != null ?
+                new ObjectParameter("coremp", coremp) :
+                new ObjectParameter("coremp", typeof(string));
+    
+            var usuempParameter = usuemp != null ?
+                new ObjectParameter("usuemp", usuemp) :
+                new ObjectParameter("usuemp", typeof(string));
+    
+            var claempParameter = claemp != null ?
+                new ObjectParameter("claemp", claemp) :
+                new ObjectParameter("claemp", typeof(string));
+    
+            var estempParameter = estemp.HasValue ?
+                new ObjectParameter("estemp", estemp) :
+                new ObjectParameter("estemp", typeof(bool));
+    
+            var coddisParameter = coddis.HasValue ?
+                new ObjectParameter("coddis", coddis) :
+                new ObjectParameter("coddis", typeof(int));
+    
+            var codrolParameter = codrol.HasValue ?
+                new ObjectParameter("codrol", codrol) :
+                new ObjectParameter("codrol", typeof(int));
+    
+            var codtipdParameter = codtipd.HasValue ?
+                new ObjectParameter("codtipd", codtipd) :
+                new ObjectParameter("codtipd", typeof(int));
+    
+            var codsexParameter = codsex.HasValue ?
+                new ObjectParameter("codsex", codsex) :
+                new ObjectParameter("codsex", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SP_RegistrarEmpleado", nomempParameter, apepempParameter, apemempParameter, docempParameter, dirempParameter, telempParameter, celempParameter, corempParameter, usuempParameter, claempParameter, estempParameter, coddisParameter, codrolParameter, codtipdParameter, codsexParameter);
+        }
+    
+        public virtual int SP_RegistrarMarca(string nombre, Nullable<bool> estado)
+        {
+            var nombreParameter = nombre != null ?
+                new ObjectParameter("nombre", nombre) :
+                new ObjectParameter("nombre", typeof(string));
+    
+            var estadoParameter = estado.HasValue ?
+                new ObjectParameter("estado", estado) :
+                new ObjectParameter("estado", typeof(bool));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SP_RegistrarMarca", nombreParameter, estadoParameter);
+        }
+    
+        public virtual int SP_RegistrarProducto(string nombre, string descripcion, Nullable<decimal> precio, Nullable<int> cantidad, Nullable<System.DateTime> fecha, Nullable<bool> estado, Nullable<int> codcat, Nullable<int> codmar)
+        {
+            var nombreParameter = nombre != null ?
+                new ObjectParameter("nombre", nombre) :
+                new ObjectParameter("nombre", typeof(string));
+    
+            var descripcionParameter = descripcion != null ?
+                new ObjectParameter("descripcion", descripcion) :
+                new ObjectParameter("descripcion", typeof(string));
+    
+            var precioParameter = precio.HasValue ?
+                new ObjectParameter("precio", precio) :
+                new ObjectParameter("precio", typeof(decimal));
+    
+            var cantidadParameter = cantidad.HasValue ?
+                new ObjectParameter("cantidad", cantidad) :
+                new ObjectParameter("cantidad", typeof(int));
+    
+            var fechaParameter = fecha.HasValue ?
+                new ObjectParameter("fecha", fecha) :
+                new ObjectParameter("fecha", typeof(System.DateTime));
+    
+            var estadoParameter = estado.HasValue ?
+                new ObjectParameter("estado", estado) :
+                new ObjectParameter("estado", typeof(bool));
+    
+            var codcatParameter = codcat.HasValue ?
+                new ObjectParameter("codcat", codcat) :
+                new ObjectParameter("codcat", typeof(int));
+    
+            var codmarParameter = codmar.HasValue ?
+                new ObjectParameter("codmar", codmar) :
+                new ObjectParameter("codmar", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SP_RegistrarProducto", nombreParameter, descripcionParameter, precioParameter, cantidadParameter, fechaParameter, estadoParameter, codcatParameter, codmarParameter);
+        }
+    
+        public virtual int SP_RegistrarRol(string nombre, Nullable<bool> estado)
+        {
+            var nombreParameter = nombre != null ?
+                new ObjectParameter("nombre", nombre) :
+                new ObjectParameter("nombre", typeof(string));
+    
+            var estadoParameter = estado.HasValue ?
+                new ObjectParameter("estado", estado) :
+                new ObjectParameter("estado", typeof(bool));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SP_RegistrarRol", nombreParameter, estadoParameter);
+        }
+    
+        public virtual int SP_RegistrarSexo(string nombre, Nullable<bool> estado)
+        {
+            var nombreParameter = nombre != null ?
+                new ObjectParameter("nombre", nombre) :
+                new ObjectParameter("nombre", typeof(string));
+    
+            var estadoParameter = estado.HasValue ?
+                new ObjectParameter("estado", estado) :
+                new ObjectParameter("estado", typeof(bool));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SP_RegistrarSexo", nombreParameter, estadoParameter);
+        }
+    
+        public virtual int SP_RegistrarTicketPedido(Nullable<System.DateTime> fecped, Nullable<int> codemp, Nullable<int> codcli, Nullable<bool> estped)
+        {
+            var fecpedParameter = fecped.HasValue ?
+                new ObjectParameter("fecped", fecped) :
+                new ObjectParameter("fecped", typeof(System.DateTime));
+    
+            var codempParameter = codemp.HasValue ?
+                new ObjectParameter("codemp", codemp) :
+                new ObjectParameter("codemp", typeof(int));
+    
+            var codcliParameter = codcli.HasValue ?
+                new ObjectParameter("codcli", codcli) :
+                new ObjectParameter("codcli", typeof(int));
+    
+            var estpedParameter = estped.HasValue ?
+                new ObjectParameter("estped", estped) :
+                new ObjectParameter("estped", typeof(bool));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SP_RegistrarTicketPedido", fecpedParameter, codempParameter, codcliParameter, estpedParameter);
+        }
+    
+        public virtual int SP_RegistrarTipoDocumento(string nombre, Nullable<bool> estado)
+        {
+            var nombreParameter = nombre != null ?
+                new ObjectParameter("nombre", nombre) :
+                new ObjectParameter("nombre", typeof(string));
+    
+            var estadoParameter = estado.HasValue ?
+                new ObjectParameter("estado", estado) :
+                new ObjectParameter("estado", typeof(bool));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SP_RegistrarTipoDocumento", nombreParameter, estadoParameter);
+        }
     }
 }

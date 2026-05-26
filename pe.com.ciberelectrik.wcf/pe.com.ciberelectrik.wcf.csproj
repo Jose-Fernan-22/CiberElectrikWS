@@ -142,6 +142,105 @@
     <Compile Include="sexo.cs">
       <DependentUpon>EDMCiberElectrik.tt</DependentUpon>
     </Compile>
+    <Compile Include="SP_BuscarCategoriaXCodigo_Result.cs">
+      <DependentUpon>EDMCiberElectrik.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_BuscarClienteXCodigo_Result.cs">
+      <DependentUpon>EDMCiberElectrik.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_BuscarDetalleTicketPedidoXCodigo_Result.cs">
+      <DependentUpon>EDMCiberElectrik.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_BuscarDistritoXCodigo_Result.cs">
+      <DependentUpon>EDMCiberElectrik.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_BuscarEmpleadoXCodigo_Result.cs">
+      <DependentUpon>EDMCiberElectrik.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_BuscarMarcaXCodigo_Result.cs">
+      <DependentUpon>EDMCiberElectrik.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_BuscarProductoXCodigo_Result.cs">
+      <DependentUpon>EDMCiberElectrik.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_BuscarRolXCodigo_Result.cs">
+      <DependentUpon>EDMCiberElectrik.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_BuscarSexoXCodigo_Result.cs">
+      <DependentUpon>EDMCiberElectrik.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_BuscarTicketPedidoXCodigo_Result.cs">
+      <DependentUpon>EDMCiberElectrik.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_BuscarTipoDocumentoXCodigo_Result.cs">
+      <DependentUpon>EDMCiberElectrik.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_MostrarCategoriaTodo_Result.cs">
+      <DependentUpon>EDMCiberElectrik.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_MostrarCategoria_Result.cs">
+      <DependentUpon>EDMCiberElectrik.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_MostrarClienteTodo_Result.cs">
+      <DependentUpon>EDMCiberElectrik.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_MostrarCliente_Result.cs">
+      <DependentUpon>EDMCiberElectrik.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_MostrarDetalleTicketPedidoTodo_Result.cs">
+      <DependentUpon>EDMCiberElectrik.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_MostrarDetalleTicketPedido_Result.cs">
+      <DependentUpon>EDMCiberElectrik.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_MostrarDistritoTodo_Result.cs">
+      <DependentUpon>EDMCiberElectrik.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_MostrarDistrito_Result.cs">
+      <DependentUpon>EDMCiberElectrik.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_MostrarEmpleadoTodo_Result.cs">
+      <DependentUpon>EDMCiberElectrik.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_MostrarEmpleado_Result.cs">
+      <DependentUpon>EDMCiberElectrik.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_MostrarMarcaTodo_Result.cs">
+      <DependentUpon>EDMCiberElectrik.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_MostrarMarca_Result.cs">
+      <DependentUpon>EDMCiberElectrik.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_MostrarProductoTodo_Result.cs">
+      <DependentUpon>EDMCiberElectrik.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_MostrarProducto_Result.cs">
+      <DependentUpon>EDMCiberElectrik.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_MostrarRolTodo_Result.cs">
+      <DependentUpon>EDMCiberElectrik.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_MostrarRol_Result.cs">
+      <DependentUpon>EDMCiberElectrik.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_MostrarSexoTodo_Result.cs">
+      <DependentUpon>EDMCiberElectrik.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_MostrarSexo_Result.cs">
+      <DependentUpon>EDMCiberElectrik.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_MostrarTicketPedidoTodo_Result.cs">
+      <DependentUpon>EDMCiberElectrik.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_MostrarTicketPedido_Result.cs">
+      <DependentUpon>EDMCiberElectrik.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_MostrarTipoDocumentoTodo_Result.cs">
+      <DependentUpon>EDMCiberElectrik.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_MostrarTipoDocumento_Result.cs">
+      <DependentUpon>EDMCiberElectrik.tt</DependentUpon>
+    </Compile>
     <Compile Include="ticketpedido.cs">
       <DependentUpon>EDMCiberElectrik.tt</DependentUpon>
     </Compile>
